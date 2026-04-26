@@ -1,6 +1,4 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=250&section=header&text=Hi,%20I'm%20Victor%20Oladimeji&fontSize=50&fontAlignY=35&desc=Full-Stack%20Engineer%20%7C%20Backend%20Focused%20%7C%20AI%20%26%20Blockchain&descAlignY=55&descAlign=50" alt="Header" />
-</div>
+<h1 align="center">Hi, I'm Victor Oladimeji 👋</h1>
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Engineer;Backend+Systems+%7C+API+Design;AI+%26+Agentic+Workflows;Building+Real+Products+that+Scale" alt="Typing SVG" />
@@ -58,19 +56,6 @@
 
 ---
 
-### 🚀 Featured Projects
-
-| Project | Description | Role / Highlights |
-| :--- | :--- | :--- |
-| **[Izabi AI](https://kingvic-portfolio.vercel.app)** | AI-powered learning platform that generates exams, adaptive tests, and study plans. | Full-Stack, AI Integrations |
-| **[Yewo](https://kingvic-portfolio.vercel.app)** | AI-based job scam detection system using ML risk scoring. | Machine Learning, Backend |
-| **[Sui Explorer](https://kingvic-portfolio.vercel.app)** | Blockchain data viewer for tracking transactions and debugging Move contracts. | Blockchain, Frontend |
-| **[SureTruqs](https://kingvic-portfolio.vercel.app)** | Logistics platform for managing transport operations and tracking workflows. | Architecture, API Design |
-
-> 🔗 **View my full portfolio and all projects here: [kingvic-portfolio.vercel.app](https://kingvic-portfolio.vercel.app)**
-
----
-
 ### 📊 GitHub Stats
 
 <div align="center">
@@ -98,11 +83,4 @@
   <a href="https://kingvic-portfolio.vercel.app" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-252F3F?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
   </a>
-</div>
-
-<br/>
-
-<div align="center">
-  <i>Profile Visitors</i><br/>
-  <img src="https://profile-counter.glitch.me/Kingvic300/count.svg" alt="Visitor Count" />
 </div>
