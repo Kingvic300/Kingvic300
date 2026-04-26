@@ -20,41 +20,35 @@
 
 ### ⚙️ Tech Stack & Tools
 
-<table>
-  <tr>
-    <td align="center" width="200"><b>Backend & Systems</b></td>
-    <td align="center" width="200"><b>Frontend & Mobile</b></td>
-    <td align="center" width="200"><b>Databases</b></td>
-    <td align="center" width="200"><b>Tools & DevOps</b></td>
-  </tr>
-  <tr>
-    <td align="center">
-      <br/>
-      <img src="https://skillicons.dev/icons?i=nodejs,nestjs,java,spring,python,django,rust&perline=3" />
-      <br/>
-    </td>
-    <td align="center">
-      <br/>
-      <img src="https://skillicons.dev/icons?i=react,ts,tailwind,css,electron&perline=3" />
-      <br/>
-    </td>
-    <td align="center">
-      <br/>
-      <img src="https://skillicons.dev/icons?i=mongodb,mysql,sqlite,postgres&perline=3" />
-      <br/>
-    </td>
-    <td align="center">
-      <br/>
-      <img src="https://skillicons.dev/icons?i=docker,githubactions,postman,git,linux&perline=3" />
-      <br/>
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-<b>AI / Data:</b> Scikit-learn, Pandas, TF-IDF, LLM integrations<br/>
-<b>Blockchain:</b> Move (Sui), Solidity
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <b>Backend & Systems</b><br><br>
+        <img src="https://skillicons.dev/icons?i=nodejs,nestjs,java,spring,python,django,rust&perline=4" />
+      </td>
+      <td align="center" width="50%">
+        <b>Frontend & Mobile</b><br><br>
+        <img src="https://skillicons.dev/icons?i=react,ts,tailwind,css,electron&perline=4" />
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="50%">
+        <b>Databases & Web3</b><br><br>
+        <img src="https://skillicons.dev/icons?i=mongodb,mysql,sqlite,postgres,solidity&perline=4" />
+      </td>
+      <td align="center" width="50%">
+        <b>Tools & DevOps</b><br><br>
+        <img src="https://skillicons.dev/icons?i=docker,githubactions,postman,git,linux&perline=4" />
+      </td>
+    </tr>
+  </table>
+  
+  <br/>
+  
+  <b>AI / Data:</b> Scikit-learn, Pandas, TF-IDF, LLM integrations<br/>
+  <b>Blockchain:</b> Move (Sui), Solidity
+</div>
 
 ---
 
