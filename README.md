@@ -21,25 +21,25 @@
 ### ⚙️ Tech Stack & Tools
 
 <div align="center">
-  <table>
+  <table width="100%">
     <tr>
-      <td align="center" width="250">
+      <td align="center" width="50%">
         <b>Backend & Systems</b><br><br>
-        <img src="https://skillicons.dev/icons?i=nodejs,nestjs,java,spring,python,django,rust&perline=4" />
+        <img src="https://skillicons.dev/icons?i=nodejs,nestjs,java,spring,python,django,rust&perline=7" />
       </td>
       <td align="center" width="50%">
         <b>Frontend & Mobile</b><br><br>
-        <img src="https://skillicons.dev/icons?i=react,ts,tailwind,css,electron&perline=4" />
+        <img src="https://skillicons.dev/icons?i=react,ts,tailwind,css,electron&perline=7" />
       </td>
     </tr>
     <tr>
       <td align="center" width="50%">
         <b>Databases & Web3</b><br><br>
-        <img src="https://skillicons.dev/icons?i=mongodb,mysql,sqlite,postgres,solidity&perline=4" />
+        <img src="https://skillicons.dev/icons?i=mongodb,mysql,sqlite,postgres,solidity&perline=7" />
       </td>
       <td align="center" width="50%">
         <b>Tools & DevOps</b><br><br>
-        <img src="https://skillicons.dev/icons?i=docker,githubactions,postman,git,linux&perline=4" />
+        <img src="https://skillicons.dev/icons?i=docker,githubactions,postman,git,linux&perline=7" />
       </td>
     </tr>
   </table>
