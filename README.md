@@ -39,7 +39,7 @@
       </td>
       <td align="center" width="50%">
         <b>Tools & DevOps</b><br><br>
-        <img src="https://skillicons.dev/icons?i=docker,githubactions,postman,git,linux&perline=7" />
+        <img src="https://skillicons.dev/icons?i=docker,githubactions,postman,swagger,git,linux&perline=7" />
       </td>
     </tr>
   </table>
