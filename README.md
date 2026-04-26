@@ -10,11 +10,12 @@
 
 ### 👨‍💻 About Me
 
-- ⚡ I’m a full-stack engineer with a strong focus on backend systems and scalable architecture.
-- 🏗️ I build APIs, AI-powered platforms, and real-world products people actually use.
-- 🎯 Currently working on **AI learning systems, fraud detection tools, and developer platforms**.
-- 🛠️ Comfortable across the stack: backend first, but I ship frontend every sprint.
-- 📈 I care about clean code, performance, and systems that don’t fall apart under pressure.
+> *“I care about clean code, performance, and systems that don’t fall apart under pressure.”*
+
+- ⚡ **Profile:** Full-stack engineer with a strong focus on backend systems and scalable architecture.
+- 🏗️ **What I Build:** APIs, AI-powered platforms, and real-world products people actually use.
+- 🎯 **Current Focus:** AI learning systems, fraud detection tools, and developer platforms.
+- 🛠️ **Workflow:** Comfortable across the stack: backend first, but I ship frontend every sprint.
 
 ---
 
