@@ -23,7 +23,7 @@
 <div align="center">
   <table>
     <tr>
-      <td align="center" width="50%">
+      <td align="center" width="250">
         <b>Backend & Systems</b><br><br>
         <img src="https://skillicons.dev/icons?i=nodejs,nestjs,java,spring,python,django,rust&perline=4" />
       </td>
