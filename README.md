@@ -58,18 +58,11 @@
 
 ---
 
-### 📊 GitHub Stats
+### 📊 GitHub Stats & Languages
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Kingvic300&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7" alt="GitHub Stats" />
-</div>
-
-<br/>
-
-### 🏆 Most Used Languages
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kingvic300&layout=donut&theme=tokyonight&hide_border=true&bg_color=0D1117&langs_count=8&title_color=36BCF7&text_color=A9B1D6" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Kingvic300&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7" alt="GitHub Stats" height="192px" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kingvic300&layout=donut&theme=tokyonight&hide_border=true&bg_color=0D1117&langs_count=8&title_color=36BCF7&text_color=A9B1D6" alt="Top Languages" height="192px" />
 </div>
 
 <br/>
