@@ -96,5 +96,5 @@
 <br/>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&color=timeGradient&height=150&section=footer&v=1777358389" alt="Footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=150&section=footer&v=1777358389" alt="Footer" />
 </div>
