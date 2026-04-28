@@ -1,21 +1,20 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=250&section=header&text=Victor%20Oladimeji&fontSize=60" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=250&section=header&text=Victor%20Oladimeji&fontSize=60&v=1777358389" alt="Header" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Engineer;Backend+Systems+%7C+API+Design;AI+%26+Agentic+Workflows;Building+Real+Products+that+Scale" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Engineer;Backend+Systems+%7C+API+Design;AI+%26+Agentic+Workflows;Building+Real+Products+that+Scale&v=1777358389" alt="Typing SVG" />
 </div>
 
 <br/>
 
 ### 👨‍💻 About Me
 
-> *“I care about clean code, performance, and systems that don’t fall apart under pressure.”*
-
-- ⚡ **Profile:** Full-stack engineer with a strong focus on backend systems and scalable architecture.
-- 🏗️ **What I Build:** APIs, AI-powered platforms, and real-world products people actually use.
-- 🎯 **Current Focus:** AI learning systems, fraud detection tools, and developer platforms.
-- 🛠️ **Workflow:** Comfortable across the stack: backend first, but I ship frontend every sprint.
+- ⚡ I’m a full-stack engineer with a strong focus on backend systems and scalable architecture.
+- 🏗️ I build APIs, AI-powered platforms, and real-world products people actually use.
+- 🎯 Currently working on **AI learning systems, fraud detection tools, and developer platforms**.
+- 🛠️ Comfortable across the stack: backend first, but I ship frontend every sprint.
+- 📈 I care about clean code, performance, and systems that don’t fall apart under pressure.
 
 ---
 
@@ -57,14 +56,14 @@
 ### 📊 GitHub Stats & Languages
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Kingvic300&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7" alt="GitHub Stats" height="192px" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kingvic300&layout=donut&theme=tokyonight&hide_border=true&bg_color=0D1117&langs_count=8&title_color=36BCF7&text_color=A9B1D6" alt="Top Languages" height="192px" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Kingvic300&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&v=1777358389" alt="GitHub Stats" height="192px" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kingvic300&layout=donut&theme=tokyonight&hide_border=true&bg_color=0D1117&langs_count=8&title_color=36BCF7&text_color=A9B1D6&v=1777358389" alt="Top Languages" height="192px" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Kingvic300&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakNum=A9B1D6" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Kingvic300&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakNum=A9B1D6&v=1777358389" alt="GitHub Streak" />
 </div>
 
 ---
@@ -86,5 +85,5 @@
 <br/>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=150&section=footer" alt="Footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=150&section=footer&v=1777358389" alt="Footer" />
 </div>
