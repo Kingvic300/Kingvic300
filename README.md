@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:36BCF7,100:7aa2f7&height=280&section=header&text=Victor%20Oladimeji&fontSize=70&fontColor=ffffff&animation=twinkling&desc=Full-Stack%20Engineer%20%7C%20Systems%20%26%20AI%20Builder&descSize=20&descAlignY=75&v=1777358389" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=250&section=header&text=Victor%20Oladimeji&fontSize=60&v=1777358389" alt="Header" />
 </div>
 
 <div align="center">
@@ -95,5 +95,5 @@
 <br/>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:36BCF7,100:7aa2f7&height=150&section=footer&reversal=true&v=1777358389" alt="Footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=150&section=footer&v=1777358389" alt="Footer" />
 </div>
