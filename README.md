@@ -25,7 +25,7 @@
 ### ⚙️ Tech Stack & Tools
 
 <div align="center">
-  <table width="100%">
+  <table width="80%">
     <tr>
       <td align="center" width="50%">
         <b>Backend & Systems</b><br><br>
@@ -66,7 +66,7 @@
 <br/>
 
 <div align="center">
-  <table border="0">
+  <table border="0" width="80%">
     <tr>
       <td width="50%" align="center">
         <img src="https://github-readme-stats.vercel.app/api?username=Kingvic300&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10&v=1777358389" alt="GitHub Stats" />
@@ -93,9 +93,9 @@
 ### 🤝 Let's Connect
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/victor-oladimeji-a5a68428b/" target="_blank"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" height="50" /></a>&nbsp;&nbsp;
-  <a href="mailto:victor7ishola@gmail.com" target="_blank"><img src="https://skillicons.dev/icons?i=gmail" alt="Email" height="50" /></a>&nbsp;&nbsp;
-  <a href="https://kingvic-portfolio.vercel.app" target="_blank"><img src="https://skillicons.dev/icons?i=vercel" alt="Portfolio" height="50" /></a>
+  <a href="https://www.linkedin.com/in/victor-oladimeji-a5a68428b/" target="_blank"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" height="60" /></a>&nbsp;
+  <a href="mailto:victor7ishola@gmail.com" target="_blank"><img src="https://skillicons.dev/icons?i=gmail" alt="Email" height="60" /></a>&nbsp;
+  <a href="https://kingvic-portfolio.vercel.app" target="_blank"><img src="https://skillicons.dev/icons?i=vercel" alt="Portfolio" height="60" /></a>
 </div>
 
 <br/>
