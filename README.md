@@ -7,7 +7,7 @@
 </div>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Kingvic300&color=36BCF7&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=Kingvic300&color=36BCF7&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
 </div>
 
 <br/>
@@ -60,6 +60,12 @@
 ### 📊 GitHub Stats & Languages
 
 <div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Kingvic300&theme=tokyonight&no-bg=true&no-frame=true&column=7&margin-w=15" alt="GitHub Trophies" />
+</div>
+
+<br/>
+
+<div align="center">
   <table border="0">
     <tr>
       <td width="50%" align="center">
@@ -70,7 +76,18 @@
       </td>
     </tr>
   </table>
-  
+</div>
+
+---
+
+### 🚀 Selected Projects
+
+- **[Abyss](https://github.com/Kingvic300/abyss)** – A comprehensive full-stack platform built with modern architecture.
+- **[Laigus](https://github.com/Kingvic300/Laigus)** – Innovative systems design and backend infrastructure.
+- **[Page to Pixel](https://github.com/Kingvic300/page-to-pixel)** – High-fidelity web transformations and frontend excellence.
+- **[Aiken C2](https://github.com/Kingvic300/aiken-c2)** – Advanced command and control systems exploration.
+
+---  
   <br/>
   
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kingvic300&theme=tokyonight&bg_color=0D1117&color=36BCF7&line=36BCF7&point=36BCF7&area=true&hide_border=true&v=1777358389" alt="Activity Graph" width="100%" />
