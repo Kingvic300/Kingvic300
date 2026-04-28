@@ -97,17 +97,9 @@
 ### 🤝 Let's Connect
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/victor-oladimeji-a5a68428b/" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin&theme=dark" alt="LinkedIn" height="40" />
-  </a>
-  &nbsp;
-  <a href="mailto:victor7ishola@gmail.com" target="_blank">
-    <img src="https://skillicons.dev/icons?i=gmail&theme=dark" alt="Email" height="40" />
-  </a>
-  &nbsp;
-  <a href="https://kingvic-portfolio.vercel.app" target="_blank">
-    <img src="https://skillicons.dev/icons?i=vercel&theme=dark" alt="Portfolio" height="40" />
-  </a>
+  <a href="https://www.linkedin.com/in/victor-oladimeji-a5a68428b/" target="_blank"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" height="50" /></a>&nbsp;&nbsp;
+  <a href="mailto:victor7ishola@gmail.com" target="_blank"><img src="https://skillicons.dev/icons?i=gmail" alt="Email" height="50" /></a>&nbsp;&nbsp;
+  <a href="https://kingvic-portfolio.vercel.app" target="_blank"><img src="https://skillicons.dev/icons?i=vercel" alt="Portfolio" height="50" /></a>
 </div>
 
 <br/>
