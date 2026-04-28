@@ -79,15 +79,6 @@
 </div>
 
 ---
-
-### 🚀 Selected Projects
-
-- **[Abyss](https://github.com/Kingvic300/abyss)** – A comprehensive full-stack platform built with modern architecture.
-- **[Laigus](https://github.com/Kingvic300/Laigus)** – Innovative systems design and backend infrastructure.
-- **[Page to Pixel](https://github.com/Kingvic300/page-to-pixel)** – High-fidelity web transformations and frontend excellence.
-- **[Aiken C2](https://github.com/Kingvic300/aiken-c2)** – Advanced command and control systems exploration.
-
----  
   <br/>
   
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kingvic300&theme=tokyonight&bg_color=0D1117&color=36BCF7&line=36BCF7&point=36BCF7&area=true&hide_border=true&v=1777358389" alt="Activity Graph" width="100%" />
