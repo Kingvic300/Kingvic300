@@ -6,6 +6,10 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Engineer;Backend+Systems+%7C+API+Design;AI+%26+Agentic+Workflows;Building+Real+Products+that+Scale&v=1777358389" alt="Typing SVG" />
 </div>
 
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=Kingvic300&color=36BCF7&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
+</div>
+
 <br/>
 
 ### 👨‍💻 About Me
@@ -78,17 +82,31 @@
 
 ---
 
+### 🚀 Featured Projects
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Kingvic300&repo=abyss&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10" alt="Abyss" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Kingvic300&repo=Laigus&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10" alt="Laigus" />
+  <br/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Kingvic300&repo=page-to-pixel&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10" alt="Page to Pixel" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Kingvic300&repo=aiken-c2&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10" alt="Aiken C2" />
+</div>
+
+---
+
 ### 🤝 Let's Connect
 
 <div align="center">
   <a href="https://www.linkedin.com/in/victor-oladimeji-a5a68428b/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="https://skillicons.dev/icons?i=linkedin&theme=dark" alt="LinkedIn" height="40" />
   </a>
+  &nbsp;
   <a href="mailto:victor7ishola@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://skillicons.dev/icons?i=gmail&theme=dark" alt="Email" height="40" />
   </a>
+  &nbsp;
   <a href="https://kingvic-portfolio.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-252F3F?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+    <img src="https://skillicons.dev/icons?i=vercel&theme=dark" alt="Portfolio" height="40" />
   </a>
 </div>
 
