@@ -5,11 +5,6 @@
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Engineer;Backend+Systems+%7C+API+Design;AI+%26+Agentic+Workflows;Building+Real+Products+that+Scale&v=1777358389" alt="Typing SVG" />
 </div>
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Kingvic300&color=36BCF7&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
-</div>
-
 <br/>
 
 ### 👨‍💻 About Me
