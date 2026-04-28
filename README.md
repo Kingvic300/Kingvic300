@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=250&section=header&text=Victor%20Oladimeji&fontSize=60&v=1777358389" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=venom&color=timeGradient&height=250&section=header&text=Victor%20Oladimeji&fontSize=60&v=1777358389" alt="Header" />
 </div>
 
 <div align="center">
@@ -10,11 +10,11 @@
 
 ### 👨‍💻 About Me
 
-- ⚡ I’m a full-stack engineer with a strong focus on backend systems and scalable architecture.
+- ⚡ I'm a full-stack engineer with a strong focus on backend systems and scalable architecture.
 - 🏗️ I build APIs, AI-powered platforms, and real-world products people actually use.
 - 🎯 Currently working on **AI learning systems, fraud detection tools, and developer platforms**.
 - 🛠️ Comfortable across the stack: backend first, but I ship frontend every sprint.
-- 📈 I care about clean code, performance, and systems that don’t fall apart under pressure.
+- 📈 I care about clean code, performance, and systems that don't fall apart under pressure.
 
 ---
 
@@ -95,5 +95,5 @@
 <br/>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=150&section=footer&v=1777358389" alt="Footer" />
+  <img src="https://capsule-render.vercel.app/api?type=venom&color=timeGradient&height=150&section=footer&v=1777358389" alt="Footer" />
 </div>
