@@ -82,18 +82,6 @@
 
 ---
 
-### 🚀 Featured Projects
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Kingvic300&repo=abyss&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10" alt="Abyss" />
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Kingvic300&repo=Laigus&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10" alt="Laigus" />
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Kingvic300&repo=page-to-pixel&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10" alt="Page to Pixel" />
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Kingvic300&repo=aiken-c2&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10" alt="Aiken C2" />
-</div>
-
----
-
 ### 🤝 Let's Connect
 
 <div align="center">
