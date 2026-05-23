@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&color=timeGradient&height=250&section=header&text=Victor%20Oladimeji&fontSize=60&v=1779544020" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=venom&color=timeGradient&height=250&section=header&text=Victor%20Oladimeji&fontSize=60&v=1779563916" alt="Header" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Engineer;Backend+Systems+%7C+API+Design;AI+%26+Agentic+Workflows;Building+Real+Products+that+Scale&v=1779544020" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Engineer;Backend+Systems+%7C+API+Design;AI+%26+Agentic+Workflows;Building+Real+Products+that+Scale&v=1779563916" alt="Typing SVG" />
 </div>
 <br/>
 
@@ -64,10 +64,10 @@
   <table border="0" width="80%">
     <tr>
       <td width="50%" align="center">
-        <img src="https://github-readme-stats.vercel.app/api?username=Kingvic300&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10&v=1779544020" alt="GitHub Stats" />
+        <img src="https://github-readme-stats.vercel.app/api?username=Kingvic300&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10&v=1779563916" alt="GitHub Stats" />
       </td>
       <td width="50%" align="center">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kingvic300&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&langs_count=10&title_color=36BCF7&text_color=ffffff&hide=html,css,jupyter%20notebook,shell&border_radius=10&v=1779544020" alt="Top Languages" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kingvic300&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&langs_count=10&title_color=36BCF7&text_color=ffffff&hide=html,css,jupyter%20notebook,shell&border_radius=10&v=1779563916" alt="Top Languages" />
       </td>
     </tr>
   </table>
@@ -76,11 +76,11 @@
 ---
   <br/>
   
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kingvic300&theme=tokyonight&bg_color=0D1117&color=36BCF7&line=36BCF7&point=36BCF7&area=true&hide_border=true&v=1779544020" alt="Activity Graph" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kingvic300&theme=tokyonight&bg_color=0D1117&color=36BCF7&line=36BCF7&point=36BCF7&area=true&hide_border=true&v=1779563916" alt="Activity Graph" width="100%" />
   
   <br/>
   
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Kingvic300&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakNum=A9B1D6&v=1779544020" alt="GitHub Streak" width="100%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Kingvic300&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakNum=A9B1D6&v=1779563916" alt="GitHub Streak" width="100%" />
 </div>
 
 ---
@@ -96,5 +96,5 @@
 <br/>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=150&section=footer&v=1779544020" alt="Footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=150&section=footer&v=1779563916" alt="Footer" />
 </div>
