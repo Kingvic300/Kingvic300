@@ -1,6 +1,6 @@
 <!-- ===== HEADER ===== -->
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/4bff87f6-ba64-4127-8ab6-2d6a7c577a8e" alt="Victor Oladimeji" width="100%" />
+  <img src="https://github.com/user-attachments/assets/e573c754-054b-45ce-b3bc-a1f9a1572155" alt="Victor Oladimeji" width="200" />
 </div>
 
 <div align="center">
