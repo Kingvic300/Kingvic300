@@ -4,7 +4,7 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Engineer;Backend+Systems+%7C+API+Design;AI+%26+Agentic+Workflows;Building+Real+Products+that+Scale&v=1780397110" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Engineer;Backend+Systems+%7C+API+Design;AI+%26+Agentic+Workflows;Building+Real+Products+that+Scale&v=1780413785" alt="Typing SVG" />
 </div>
 
 <!-- ===== QUICK LINKS ===== -->
@@ -34,7 +34,7 @@
       </ul>
     </td>
     <td width="40%" valign="top" align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=Kingvic300&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10&v=1780397110" alt="GitHub Stats" width="100%" />
+      <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Kingvic300&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10&v=1780413785" alt="GitHub Stats" width="100%" />
     </td>
   </tr>
 </table>
@@ -82,7 +82,7 @@
 <h3 align="center">📊 GitHub Analytics</h3>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Kingvic300&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakNum=A9B1D6&v=1780397110" alt="GitHub Streak" width="65%" />
+  <img src="https://streak-stats.demolab.com/?user=Kingvic300&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakNum=A9B1D6&v=1780413785" alt="GitHub Streak" width="65%" />
 </div>
 
 <p align="center">
@@ -99,10 +99,15 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kingvic300&theme=tokyonight&bg_color=0D1117&color=36BCF7&line=36BCF7&point=36BCF7&area=true&hide_border=true&v=1780397110" alt="Activity Graph" width="100%" />
 </div>
 
-<!-- ===== TROPHIES ===== -->
+<!-- ===== TROPHIES =====
+     Public github-profile-trophy instance is over quota (HTTP 402) and has no
+     working public mirror. Re-enable once it recovers, or self-host
+     ryo-ma/github-profile-trophy and point this at your own URL.
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=Kingvic300&theme=tokyonight&no-bg=true&no-frame=true&column=7&margin-w=15" alt="GitHub Trophies" />
 </div>
+-->
+
 
 <!-- ===== CONNECT ===== -->
 <h3 align="center">🤝 Let's Build Something</h3>
