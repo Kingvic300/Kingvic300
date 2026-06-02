@@ -4,7 +4,8 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Engineer;Backend+Systems+%7C+API+Design;AI+%26+Agentic+Workflows;Building+Real+Products+that+Scale&v=1780413785" alt="Typing SVG" />
+<img width="640" height="640" alt="WhatsApp Image 2025-12-02 at 9 18 44 PM" src="https://github.com/user-attachments/assets/e573c754-054b-45ce-b3bc-a1f9a1572155" />
+
 </div>
 
 <!-- ===== QUICK LINKS ===== -->
