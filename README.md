@@ -44,37 +44,36 @@
 </table>
 
 <!-- =========================== TECH STACK =========================== -->
-<h3 align="center">&#9881;&#65039; Tech Stack &amp; Tools</h3>
+<h3 align="center">&#128295; Tech Stack &amp; Tools</h3>
+
+<table align="center">
+  <tr>
+    <td align="right" valign="middle"><b>&#128187;&nbsp; Languages</b></td>
+    <td align="left"><img src="https://skillicons.dev/icons?i=java,python,ts,rust,solidity&perline=10" alt="Languages" /></td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><b>&#9881;&#65039;&nbsp; Backend</b></td>
+    <td align="left"><img src="https://skillicons.dev/icons?i=nodejs,nestjs,spring,django&perline=10" alt="Backend" /></td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><b>&#127912;&nbsp; Frontend</b></td>
+    <td align="left"><img src="https://skillicons.dev/icons?i=react,tailwind,css,electron&perline=10" alt="Frontend" /></td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><b>&#128451;&#65039;&nbsp; Databases</b></td>
+    <td align="left"><img src="https://skillicons.dev/icons?i=mongodb,postgres,mysql,sqlite&perline=10" alt="Databases" /></td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><b>&#9889;&nbsp; DevOps &amp; Tools</b></td>
+    <td align="left"><img src="https://skillicons.dev/icons?i=docker,githubactions,git,postman,linux&perline=10" alt="DevOps and Tools" /></td>
+  </tr>
+</table>
 
 <div align="center">
-  <table width="82%">
-    <tr>
-      <td align="center" width="50%">
-        <b>Backend &amp; Systems</b><br><br>
-        <img src="https://skillicons.dev/icons?i=nodejs,nestjs,java,spring,python,django,rust&perline=7" alt="Backend stack" />
-      </td>
-      <td align="center" width="50%">
-        <b>Frontend &amp; Mobile</b><br><br>
-        <img src="https://skillicons.dev/icons?i=react,ts,tailwind,css,electron&perline=7" alt="Frontend stack" />
-      </td>
-    </tr>
-    <tr>
-      <td align="center" width="50%">
-        <b>Databases &amp; Web3</b><br><br>
-        <img src="https://skillicons.dev/icons?i=mongodb,mysql,sqlite,postgres,solidity&perline=7" alt="Database stack" />
-      </td>
-      <td align="center" width="50%">
-        <b>Tools &amp; DevOps</b><br><br>
-        <img src="https://skillicons.dev/icons?i=docker,githubactions,postman,git,linux&perline=7" alt="DevOps stack" />
-      </td>
-    </tr>
-  </table>
-
   <br/>
-
-  <img src="https://img.shields.io/badge/AI%2FData-Scikit--learn%20%C2%B7%20Pandas%20%C2%B7%20TF--IDF%20%C2%B7%20LLMs-36BCF7?style=flat-square" alt="AI / Data" />
-  <img src="https://img.shields.io/badge/Blockchain-Move%20(Sui)%20%C2%B7%20Solidity-36BCF7?style=flat-square" alt="Blockchain" />
-  <img src="https://img.shields.io/badge/API-Swagger-36BCF7?style=flat-square" alt="API" />
+  <img src="https://img.shields.io/badge/AI%2FData-Scikit--learn%20%C2%B7%20Pandas%20%C2%B7%20TF--IDF%20%C2%B7%20LLMs-36BCF7?style=for-the-badge&logoColor=white" alt="AI / Data" />
+  <img src="https://img.shields.io/badge/Web3-Move%20(Sui)%20%C2%B7%20Solidity-36BCF7?style=for-the-badge&logoColor=white" alt="Web3" />
+  <img src="https://img.shields.io/badge/API-Swagger-36BCF7?style=for-the-badge&logoColor=white" alt="API" />
 </div>
 
 <br/>
@@ -97,8 +96,14 @@
 </div>
 
 <!-- ========================= SNAKE ANIMATION ======================== -->
+<h3 align="center">&#128013; Contribution Snake</h3>
+
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Kingvic300/Kingvic300/output/github-snake-dark.svg" alt="Contribution snake animation" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Kingvic300/Kingvic300/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Kingvic300/Kingvic300/output/github-snake.svg" />
+    <img src="https://raw.githubusercontent.com/Kingvic300/Kingvic300/output/github-snake-dark.svg" alt="Contribution snake animation" width="100%" />
+  </picture>
 </div>
 
 <!-- ============================ TROPHIES ============================
@@ -113,10 +118,20 @@
 <!-- ============================= CONNECT ============================ -->
 <h3 align="center">&#129309; Let's Build Something</h3>
 
+<p align="center">
+  I'm always up for a good problem &mdash; backend systems, AI workflows, or Web3.<br/>
+  Got an idea worth shipping, or just want to trade notes? My inbox is open.
+</p>
+
 <div align="center">
-  <a href="https://kingvic-portfolio.vercel.app" target="_blank"><img src="https://skillicons.dev/icons?i=vercel" alt="Portfolio" height="55" /></a>&nbsp;
-  <a href="https://www.linkedin.com/in/victor-oladimeji-a5a68428b/" target="_blank"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" height="55" /></a>&nbsp;
-  <a href="mailto:victor7ishola@gmail.com" target="_blank"><img src="https://skillicons.dev/icons?i=gmail" alt="Email" height="55" /></a>
+  <a href="https://kingvic-portfolio.vercel.app"><img src="https://img.shields.io/badge/Visit_my_Portfolio-36BCF7?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>&nbsp;
+  <a href="https://www.linkedin.com/in/victor-oladimeji-a5a68428b/"><img src="https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>&nbsp;
+  <a href="mailto:victor7ishola@gmail.com"><img src="https://img.shields.io/badge/Email_me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+</div>
+
+<div align="center">
+  <br/>
+  <a href="https://github.com/Kingvic300"><img src="https://img.shields.io/github/followers/Kingvic300?label=Follow%20%40Kingvic300&style=social" alt="Follow on GitHub" /></a>
 </div>
 
 <br/>
