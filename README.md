@@ -1,11 +1,13 @@
+<!-- ===== HEADER ===== -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&color=timeGradient&height=250&section=header&text=Victor%20Oladimeji&fontSize=60&v=1780397110" alt="Header" />
+  <img src="https://github.com/user-attachments/assets/4bff87f6-ba64-4127-8ab6-2d6a7c577a8e" alt="Victor Oladimeji" width="100%" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Engineer;Backend+Systems+%7C+API+Design;AI+%26+Agentic+Workflows;Building+Real+Products+that+Scale&v=1780397110" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Engineer;Backend+Systems+%7C+API+Design;AI+%26+Agentic+Workflows;Building+Real+Products+that+Scale&v=1780397110" alt="Typing SVG" />
 </div>
 
+<!-- ===== QUICK LINKS ===== -->
 <div align="center">
   <a href="https://kingvic-portfolio.vercel.app"><img src="https://img.shields.io/badge/Portfolio-36BCF7?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/victor-oladimeji-a5a68428b/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
@@ -15,18 +17,30 @@
 
 <br/>
 
-## 👨‍💻 About Me
+<!-- ===== ABOUT ===== -->
+<table align="center" width="100%">
+  <tr>
+    <td width="60%" valign="top">
+      <h3>👋 About Me</h3>
+      <p>
+        Hey, I'm <b>Victor</b> — a Full-Stack Engineer who lives in the backend
+        and ships frontend every sprint.
+      </p>
+      <ul>
+        <li>🏗️ I build APIs, AI-powered platforms & products people actually use</li>
+        <li>🤖 Focused on <b>AI learning systems, fraud detection & developer platforms</b></li>
+        <li>📈 Obsessed with clean code, performance & systems that hold under pressure</li>
+        <li>🌍 Open to collaboration on backend, AI & Web3 projects</li>
+      </ul>
+    </td>
+    <td width="40%" valign="top" align="center">
+      <img src="https://github-readme-stats.vercel.app/api?username=Kingvic300&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10&v=1780397110" alt="GitHub Stats" width="100%" />
+    </td>
+  </tr>
+</table>
 
-> Full-stack engineer with a strong focus on **backend systems** and **scalable architecture**.
-
-- 🏗️ I build APIs, AI-powered platforms, and real-world products people actually use.
-- 🎯 Currently working on **AI learning systems, fraud detection tools, and developer platforms**.
-- 🛠️ Comfortable across the stack — backend first, but I ship frontend every sprint.
-- 📈 I care about clean code, performance, and systems that don't fall apart under pressure.
-
----
-
-## ⚙️ Tech Stack & Tools
+<!-- ===== TECH STACK ===== -->
+<h3 align="center">⚙️ Tech Stack & Tools</h3>
 
 <div align="center">
   <table width="80%">
@@ -59,47 +73,49 @@
   <img src="https://img.shields.io/badge/API-Swagger-36BCF7?style=flat-square" alt="API" />
 </div>
 
----
+<!-- ===== SNAKE ANIMATION ===== -->
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Kingvic300/Kingvic300/output/github-snake-dark.svg" alt="Contribution snake animation" width="100%" />
+</div>
 
-## 📊 GitHub Stats & Languages
+<!-- ===== STATS ===== -->
+<h3 align="center">📊 GitHub Analytics</h3>
 
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Kingvic300&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakNum=A9B1D6&v=1780397110" alt="GitHub Streak" width="65%" />
+</div>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Kingvic300&theme=tokyonight" alt="Repos per Language" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Kingvic300&theme=tokyonight" alt="Most Commit Language" />
+</p>
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Kingvic300&theme=tokyonight&utcOffset=1" alt="Productive Time" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Kingvic300&theme=tokyonight" alt="Stats" />
+</p>
+
+<!-- ===== ACTIVITY GRAPH ===== -->
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kingvic300&theme=tokyonight&bg_color=0D1117&color=36BCF7&line=36BCF7&point=36BCF7&area=true&hide_border=true&v=1780397110" alt="Activity Graph" width="100%" />
+</div>
+
+<!-- ===== TROPHIES ===== -->
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=Kingvic300&theme=tokyonight&no-bg=true&no-frame=true&column=7&margin-w=15" alt="GitHub Trophies" />
 </div>
 
-<br/>
+<!-- ===== CONNECT ===== -->
+<h3 align="center">🤝 Let's Build Something</h3>
 
 <div align="center">
-  <table border="0" width="80%">
-    <tr>
-      <td width="50%" align="center">
-        <img src="https://github-readme-stats.vercel.app/api?username=Kingvic300&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10&v=1780397110" alt="GitHub Stats" />
-      </td>
-      <td width="50%" align="center">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kingvic300&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&langs_count=10&title_color=36BCF7&text_color=ffffff&hide=html,css,jupyter%20notebook,shell&border_radius=10&v=1780397110" alt="Top Languages" />
-      </td>
-    </tr>
-  </table>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Kingvic300&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakNum=A9B1D6&v=1780397110" alt="GitHub Streak" width="100%" />
-
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kingvic300&theme=tokyonight&bg_color=0D1117&color=36BCF7&line=36BCF7&point=36BCF7&area=true&hide_border=true&v=1780397110" alt="Activity Graph" width="100%" />
-</div>
-
----
-
-## 🤝 Let's Connect
-
-<div align="center">
-  <a href="https://www.linkedin.com/in/victor-oladimeji-a5a68428b/" target="_blank"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" height="60" /></a>&nbsp;
-  <a href="mailto:victor7ishola@gmail.com" target="_blank"><img src="https://skillicons.dev/icons?i=gmail" alt="Email" height="60" /></a>&nbsp;
-  <a href="https://kingvic-portfolio.vercel.app" target="_blank"><img src="https://skillicons.dev/icons?i=vercel" alt="Portfolio" height="60" /></a>
+  <a href="https://kingvic-portfolio.vercel.app" target="_blank"><img src="https://skillicons.dev/icons?i=vercel" alt="Portfolio" height="55" /></a>&nbsp;
+  <a href="https://www.linkedin.com/in/victor-oladimeji-a5a68428b/" target="_blank"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" height="55" /></a>&nbsp;
+  <a href="mailto:victor7ishola@gmail.com" target="_blank"><img src="https://skillicons.dev/icons?i=gmail" alt="Email" height="55" /></a>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=150&section=footer&v=1780397110" alt="Footer" />
+  <em>"Building real products that scale — clean code, one commit at a time ⚡"</em>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=120&section=footer&v=1780397110" width="100%" alt="Footer" />
 </div>
