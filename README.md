@@ -82,67 +82,13 @@
 <h3 align="center">&#128202; GitHub Analytics</h3>
 
 <div align="center">
-  <img
-    height="170em"
-    src="https://github-readme-stats.vercel.app/api?username=Kingvic300&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7"
-    alt="GitHub Stats"
-  />
-
-  <img
-    height="170em"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kingvic300&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7"
-    alt="Top Languages"
-  />
-</div>
-
-<br/>
-
-<div align="center">
-  <img
-    src="https://streak-stats.demolab.com/?user=Kingvic300&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakNum=A9B1D6"
-    alt="GitHub Streak"
-    width="70%"
-  />
-</div>
-
-<br/>
-
-<div align="center">
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kingvic300&theme=tokyonight"
-    alt="Profile Details"
-    width="95%"
-  />
+  <img src="https://streak-stats.demolab.com/?user=Kingvic300&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakNum=A9B1D6&v=1780672534" alt="GitHub Streak" width="62%" />
 </div>
 
 <p align="center">
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Kingvic300&theme=tokyonight"
-    alt="Repos per Language"
-    width="48%"
-  />
-
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Kingvic300&theme=tokyonight"
-    alt="Most Commit Language"
-    width="48%"
-  />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Kingvic300&theme=tokyonight" alt="Repos per Language" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Kingvic300&theme=tokyonight" alt="Most Commit Language" />
 </p>
-
-<p align="center">
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Kingvic300&theme=tokyonight"
-    alt="GitHub Stats Card"
-    width="48%"
-  />
-
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Kingvic300&theme=tokyonight&utcOffset=1"
-    alt="Productive Time"
-    width="48%"
-  />
-</p>
-
 
 <!-- ========================== ACTIVITY GRAPH ======================== -->
 <div align="center">
@@ -194,3 +140,4 @@
   <em>"Building real products that scale &mdash; clean code, one commit at a time &#9889;"</em>
   <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=120&section=footer&v=1780672534" width="100%" alt="Footer" />
 </div>
+
