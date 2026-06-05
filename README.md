@@ -37,7 +37,7 @@
         <li>&#128172; Ask me about Node/NestJS, Spring, Python, or smart contracts</li>
       </ul>
     </td>
-    <td width="42%" valign="top" align="center">
+    <td width="100%" valign="top" align="center">
       <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Kingvic300&show_icons=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10&v=1780672534" alt="GitHub Stats" width="100%" />
     </td>
   </tr>
