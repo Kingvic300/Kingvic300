@@ -38,7 +38,7 @@
       </ul>
     </td>
     <td width="100%" valign="top" align="center">
-      <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Kingvic300&show_icons=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10&v=1783610415" alt="GitHub Stats" width="100%" />
+      <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Kingvic300&show_icons=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10&v=1783626767" alt="GitHub Stats" width="100%" />
     </td>
   </tr>
 </table>
@@ -82,7 +82,7 @@
 <h3 align="center">&#128202; GitHub Analytics</h3>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com/?user=Kingvic300&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakNum=A9B1D6&v=1783610415" alt="GitHub Streak" width="62%" />
+  <img src="https://streak-stats.demolab.com/?user=Kingvic300&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakNum=A9B1D6&v=1783626767" alt="GitHub Streak" width="62%" />
 </div>
 
 <p align="center">
@@ -92,7 +92,7 @@
 
 <!-- ========================== ACTIVITY GRAPH ======================== -->
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kingvic300&custom_title=Contribution%20Graph&bg_color=0D1117&color=36BCF7&line=36BCF7&point=A9B1D6&area=true&area_color=36BCF7&radius=16&hide_border=true&height=320&v=1783610415" alt="Contribution Graph" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kingvic300&custom_title=Contribution%20Graph&bg_color=0D1117&color=36BCF7&line=36BCF7&point=A9B1D6&area=true&area_color=36BCF7&radius=16&hide_border=true&height=320&v=1783626767" alt="Contribution Graph" width="100%" />
 </div>
 
 <!-- ========================= SNAKE ANIMATION ======================== -->
@@ -138,6 +138,6 @@
 
 <div align="center">
   <em>"Building real products that scale &mdash; clean code, one commit at a time &#9889;"</em>
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=120&section=footer&v=1783610415" width="100%" alt="Footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=120&section=footer&v=1783626767" width="100%" alt="Footer" />
 </div>
 
