@@ -26,16 +26,8 @@
     <td width="58%" valign="top">
       <h3>&#128075; About Me</h3>
       <p>
-        Hey, I'm <b>Victor</b> &mdash; a Full-Stack Engineer who lives in the
-        backend and ships frontend every sprint.
+        Hey, I'm <b>Victor</b> &mdash; a Software engineer
       </p>
-      <ul>
-        <li>&#127959;&#65039; I build APIs, AI-powered platforms &amp; products people actually use</li>
-        <li>&#129302; Focused on <b>AI learning systems, fraud detection &amp; developer platforms</b></li>
-        <li>&#128200; Obsessed with clean code, performance &amp; systems that hold under pressure</li>
-        <li>&#127757; Open to collaboration on backend, AI &amp; Web3 projects</li>
-        <li>&#128172; Ask me about Node/NestJS, Spring, Python, or smart contracts</li>
-      </ul>
     </td>
     <td width="100%" valign="top" align="center">
       <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Kingvic300&show_icons=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&border_radius=10&v=1783935368" alt="GitHub Stats" width="100%" />
