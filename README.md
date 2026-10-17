@@ -26,7 +26,7 @@
     <td width="58%" valign="top">
       <h3>&#128075; About Me</h3>
       <p>
-        Hey, I'm <b>Victor</b> &mdash; a Software engineer
+        Hey, I'm <b>Victor</b>  a Software engineer
       </p>
     </td>
     <td width="100%" valign="top" align="center">
