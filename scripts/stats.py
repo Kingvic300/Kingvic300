@@ -1,6 +1,6 @@
-"""Render the "Behind the Commits" activity card from real GitHub data.
+"""Render the "Behind the commits" activity card from real GitHub data.
 
-Usage:  GITHUB_TOKEN=... python scripts/stats.py
+Usage:  GITHUB_TOKEN=... python3 scripts/stats.py
 Writes: assets/stats-light.svg and assets/stats-dark.svg
 
 Standard library only. If the API call fails, nothing is written, so the
@@ -17,13 +17,14 @@ import sys
 import urllib.request
 from html import escape
 
+from theme import MONO, SANS, THEMES, kicker, shell
+
 LOGIN = "Kingvic300"
 OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "assets")
 
 QUERY = """
 query($login: String!) {
   user(login: $login) {
-    createdAt
     pullRequests { totalCount }
     contributionsCollection {
       contributionCalendar {
@@ -45,8 +46,6 @@ query($login: String!) {
 }
 """
 
-from theme import MONO, SANS, THEMES
-
 
 def fetch(token):
     req = urllib.request.Request(
@@ -63,9 +62,10 @@ def fetch(token):
 
 def summarize(user):
     cal = user["contributionsCollection"]["contributionCalendar"]
-    days = [d for w in cal["weeks"] for d in w["contributionDays"]]
     today = dt.date.today().isoformat()
-    days = [d for d in days if d["date"] <= today]
+    weeks = [[d for d in w["contributionDays"] if d["date"] <= today] for w in cal["weeks"]]
+    weeks = [w for w in weeks if w]
+    days = [d for w in weeks for d in w]
 
     longest = run = 0
     for d in days:
@@ -78,8 +78,7 @@ def summarize(user):
         if not d["contributionCount"]:
             break
         current += 1
-
-    weekly = [sum(d["contributionCount"] for d in w["contributionDays"]) for w in cal["weeks"]]
+    best = max(days, key=lambda d: d["contributionCount"]) if days else {"contributionCount": 0, "date": today}
 
     langs = {}
     for repo in user["repositories"]["nodes"]:
@@ -90,18 +89,19 @@ def summarize(user):
         langs.pop(skip, None)
     total = sum(langs.values()) or 1
     top = sorted(langs.items(), key=lambda kv: -kv[1])[:5]
-    top = [(n, s / total) for n, s in top]
 
     return dict(
         total=cal["totalContributions"],
-        weekly=weekly,
-        first=days[0]["date"] if days else today,
+        weekly=[sum(d["contributionCount"] for d in w) for w in weeks],
+        week_starts=[w[0]["date"] for w in weeks],
         current=current,
         longest=longest,
+        best=best["contributionCount"],
+        best_date=best["date"],
         prs=user["pullRequests"]["totalCount"],
         repos=user["repositories"]["totalCount"],
         stars=sum(r["stargazerCount"] for r in user["repositories"]["nodes"]),
-        langs=top,
+        langs=[(n, s / total) for n, s in top],
         updated=today,
     )
 
@@ -111,85 +111,89 @@ def fmt(n):
 
 
 def render(s, c):
-    W, H = 1200, 460
+    W, H = 1200, 480
     out = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
-        f'role="img" aria-labelledby="t d">',
-        '<title id="t">Behind the commits</title>',
-        f'<desc id="d">GitHub activity for {LOGIN}: {fmt(s["total"])} contributions in the last year, '
-        f'longest streak {s["longest"]} days, {fmt(s["prs"])} pull requests, {fmt(s["stars"])} stars '
-        f'across {s["repos"]} public repositories.</desc>',
-        f'<defs><linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">'
-        f'<stop offset="0" stop-color="{c["mint"]}"/><stop offset="1" stop-color="{c["sky"]}"/></linearGradient>'
-        f'<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{c["sky"]}"/>'
-        f'<stop offset="0.55" stop-color="{c["mint"]}"/><stop offset="1" stop-color="{c["indigo"]}"/></linearGradient></defs>',
-        f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="18" fill="{c["bg"]}" stroke="{c["border"]}" stroke-width="2"/>',
-        f'<text x="40" y="56" font-family="{MONO}" font-size="18" fill="{c["muted"]}">'
-        f'<tspan fill="{c["mint"]}">$</tspan> git log --author=Kingvic300 --since="1 year ago"</text>',
-        f'<text x="{W-40}" y="56" text-anchor="end" font-family="{MONO}" font-size="14" fill="{c["muted"]}">'
-        f'updated {s["updated"]}</text>',
+        kicker(40, 50, "Activity · last 12 months", c, color=c["accent"]),
+        kicker(W - 40, 50, f'updated {s["updated"]}', c, anchor="end"),
+        f'<text x="40" y="94" font-family="{SANS}" fill="{c["text"]}">'
+        f'<tspan font-size="34" font-weight="700">{fmt(s["total"])}</tspan>'
+        f'<tspan font-size="16" fill="{c["muted"]}" dx="10">contributions in the last year</tspan></text>',
     ]
 
-    # contributions chart
-    cx, cy, cw, ch = 40, 110, 700, 200
+    # weekly contributions chart with gridlines and month labels
+    cx, cy, cw, ch = 96, 132, 644, 196
     weekly = s["weekly"]
     peak = max(weekly) or 1
+    for frac in (1, 0.5):
+        y = cy + ch - ch * frac
+        out.append(f'<line x1="{cx}" y1="{y:.1f}" x2="{cx+cw}" y2="{y:.1f}" stroke="{c["border"]}" stroke-dasharray="3 5"/>')
+        out.append(f'<text x="{cx-10}" y="{y+4:.1f}" text-anchor="end" font-family="{MONO}" font-size="11" '
+                   f'fill="{c["muted"]}">{fmt(round(peak*frac))}/wk</text>')
+    out.append(f'<line x1="{cx}" y1="{cy+ch}" x2="{cx+cw}" y2="{cy+ch}" stroke="{c["border"]}" stroke-width="1.5"/>')
     gap = 3
     bw = (cw - gap * (len(weekly) - 1)) / max(len(weekly), 1)
-    out.append(f'<text x="{cx}" y="{cy-14}" font-family="{SANS}" font-size="15" font-weight="600" fill="{c["text"]}">'
-               f'Contributions per week</text>')
-    out.append(f'<line x1="{cx}" y1="{cy+ch}" x2="{cx+cw}" y2="{cy+ch}" stroke="{c["faint"]}" stroke-width="1.5"/>')
+    last_month = None
     for i, v in enumerate(weekly):
-        h = max(2.0, ch * v / peak) if v else 2.0
-        fill = "url(#bar)" if v else c["faint"]
-        out.append(f'<rect x="{cx + i*(bw+gap):.1f}" y="{cy+ch-h:.1f}" width="{bw:.1f}" height="{h:.1f}" rx="1.5" fill="{fill}"/>')
-    first = dt.date.fromisoformat(s["first"]).strftime("%b %Y")
-    out.append(f'<text x="{cx}" y="{cy+ch+24}" font-family="{MONO}" font-size="13" fill="{c["muted"]}">{first}</text>')
-    out.append(f'<text x="{cx+cw}" y="{cy+ch+24}" text-anchor="end" font-family="{MONO}" font-size="13" fill="{c["muted"]}">now</text>')
-    out.append(f'<text x="{cx+cw}" y="{cy-14}" text-anchor="end" font-family="{MONO}" font-size="13" fill="{c["muted"]}">peak {fmt(peak)}/wk</text>')
+        x = cx + i * (bw + gap)
+        if v:
+            h = max(3.0, ch * v / peak)
+            op = 0.35 + 0.65 * v / peak
+            out.append(f'<rect x="{x:.1f}" y="{cy+ch-h:.1f}" width="{bw:.1f}" height="{h:.1f}" rx="2" '
+                       f'fill="{c["accent"]}" fill-opacity="{op:.2f}"/>')
+        else:
+            out.append(f'<rect x="{x:.1f}" y="{cy+ch-3:.1f}" width="{bw:.1f}" height="3" rx="1.5" fill="{c["faint"]}"/>')
+        month = s["week_starts"][i][:7]
+        if month != last_month:
+            if last_month is not None and int(month[5:]) % 2 == 1:
+                label = dt.date.fromisoformat(month + "-01").strftime("%b")
+                out.append(f'<text x="{x:.1f}" y="{cy+ch+22}" font-family="{MONO}" font-size="12" fill="{c["muted"]}">{label}</text>')
+            last_month = month
 
     # stat tiles (2 x 3)
+    best_day = dt.date.fromisoformat(s["best_date"]).strftime("%d %b")
     tiles = [
-        (fmt(s["total"]), "contributions", c["sky"]),
-        (f'{s["longest"]}d', "longest streak", c["mint"]),
-        (f'{s["current"]}d', "current streak", c["mint"]),
-        (fmt(s["prs"]), "pull requests", c["indigo"]),
-        (fmt(s["stars"]), "stars earned", c["sky"]),
-        (fmt(s["repos"]), "public repos", c["indigo"]),
+        (f'{s["current"]}d', "current streak"),
+        (f'{s["longest"]}d', "longest streak"),
+        (fmt(s["prs"]), "pull requests"),
+        (fmt(s["best"]), f"best day · {best_day}"),
+        (fmt(s["repos"]), "public repos"),
+        (fmt(s["stars"]), "stars earned"),
     ]
-    tx, ty, tw, th, tg = 790, 90, 175, 72, 16
-    for i, (val, label, col) in enumerate(tiles):
+    tx, ty, tw, th, tg = 784, 74, 180, 78, 16
+    for i, (val, label) in enumerate(tiles):
         x = tx + (i % 2) * (tw + tg)
         y = ty + (i // 2) * (th + tg)
-        out.append(f'<rect x="{x}" y="{y}" width="{tw}" height="{th}" rx="10" fill="none" stroke="{c["border"]}" stroke-width="1.5"/>')
-        out.append(f'<rect x="{x}" y="{y+16}" width="3" height="{th-32}" rx="1.5" fill="{col}"/>')
-        out.append(f'<text x="{x+18}" y="{y+36}" font-family="{SANS}" font-size="26" font-weight="700" fill="{c["text"]}">{escape(val)}</text>')
-        out.append(f'<text x="{x+18}" y="{y+58}" font-family="{MONO}" font-size="13" fill="{c["muted"]}">{label}</text>')
+        out.append(f'<rect x="{x}" y="{y}" width="{tw}" height="{th}" rx="12" fill="{c["bg"]}" stroke="{c["border"]}"/>')
+        out.append(f'<text x="{x+18}" y="{y+38}" font-family="{SANS}" font-size="26" font-weight="700" '
+                   f'fill="{c["accent"] if i == 0 else c["text"]}">{escape(val)}</text>')
+        out.append(f'<text x="{x+18}" y="{y+60}" font-family="{MONO}" font-size="12.5" fill="{c["muted"]}">{escape(label)}</text>')
 
-    # languages bar
-    ly = 392
-    out.append(f'<text x="40" y="{ly-8}" font-family="{SANS}" font-size="15" font-weight="600" fill="{c["text"]}">Languages I ship with</text>')
-    out.append(f'<text x="{W-40}" y="{ly-8}" text-anchor="end" font-family="{MONO}" font-size="13" fill="{c["muted"]}">share of code in public repos</text>')
-    palette = [c["sky"], c["mint"], c["indigo"], c["amber"], c["slate"]]
-    x, bar_w = 40.0, W - 80
-    out.append(f'<clipPath id="lc"><rect x="40" y="{ly+4}" width="{bar_w}" height="10" rx="5"/></clipPath><g clip-path="url(#lc)">')
-    rest = 1 - sum(p for _, p in s["langs"])
-    for (name, p), col in zip(s["langs"], palette):
-        out.append(f'<rect x="{x:.1f}" y="{ly+4}" width="{bar_w*p:.1f}" height="10" fill="{col}"/>')
-        x += bar_w * p
-    if rest > 0:
-        out.append(f'<rect x="{x:.1f}" y="{ly+4}" width="{bar_w*rest:.1f}" height="10" fill="{c["faint"]}"/>')
-    out.append("</g>")
+    # languages: segmented bar plus legend
+    ly = 400
+    out.append(kicker(40, ly - 12, "Languages I ship with", c))
+    out.append(kicker(W - 40, ly - 12, "share of code in public repos", c, anchor="end"))
+    bar_w, seg_gap = W - 80, 4
+    x = 40.0
+    parts = list(s["langs"])
+    rest = 1 - sum(p for _, p in parts)
+    if rest > 0.005:
+        parts.append(("Other", rest))
+    usable = bar_w - seg_gap * (len(parts) - 1)
+    colors = c["scale"] + [c["faint"]]
+    for i, (name, p) in enumerate(parts):
+        col = colors[i] if name != "Other" else c["faint"]
+        out.append(f'<rect x="{x:.1f}" y="{ly}" width="{max(usable*p, 2):.1f}" height="12" rx="4" fill="{col}"/>')
+        x += usable * p + seg_gap
     lx = 40
-    for (name, p), col in zip(s["langs"], palette):
+    for i, (name, p) in enumerate(s["langs"]):
         label = f"{name} {p*100:.0f}%"
-        out.append(f'<circle cx="{lx+5}" cy="{ly+34}" r="5" fill="{col}"/>')
-        out.append(f'<text x="{lx+16}" y="{ly+39}" font-family="{MONO}" font-size="14" fill="{c["muted"]}">{escape(label)}</text>')
-        lx += 30 + len(label) * 8.6
+        out.append(f'<rect x="{lx}" y="{ly+28}" width="10" height="10" rx="3" fill="{colors[i]}"/>')
+        out.append(f'<text x="{lx+16}" y="{ly+37}" font-family="{MONO}" font-size="13" fill="{c["muted"]}">{escape(label)}</text>')
+        lx += 36 + len(label) * 8
 
-    out.append(f'<rect x="1" y="{H-6}" width="{W-2}" height="5" rx="2.5" fill="url(#accent)"/>')
-    out.append("</svg>")
-    return "\n".join(out) + "\n"
+    desc = (f'GitHub activity for {LOGIN}: {fmt(s["total"])} contributions in the last year, longest streak '
+            f'{s["longest"]} days, {fmt(s["prs"])} pull requests, {fmt(s["stars"])} stars across {s["repos"]} public repositories.')
+    return shell(W, H, c, desc, "".join(out), rx=18)
 
 
 def main():
@@ -203,7 +207,7 @@ def main():
     for name, colors in THEMES.items():
         with open(os.path.join(OUT_DIR, f"stats-{name}.svg"), "w", encoding="utf-8") as f:
             f.write(render(stats, colors))
-    print(json.dumps({k: v for k, v in stats.items() if k != "weekly"}))
+    print(json.dumps({k: v for k, v in stats.items() if k not in ("weekly", "week_starts")}))
 
 
 if __name__ == "__main__":

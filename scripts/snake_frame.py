@@ -1,20 +1,21 @@
-"""Wrap the Platane/snk contribution snake in a terminal-style card.
+"""Wrap the Platane/snk contribution snake in a card that matches the README.
 
 Usage:  python3 scripts/snake_frame.py dist
 Reads:  dist/github-snake.svg, dist/github-snake-dark.svg (raw snk output)
-Writes: the same files, framed to match the rest of the README.
+Writes: the same files, framed.
 
-Standard library only. If a file is missing it is skipped.
+Standard library only. Missing or already framed files are skipped.
+The snake colors themselves are set in .github/workflows/snake.yml.
 """
 
 import os
 import re
 import sys
 
-from theme import MONO, THEMES, accent_gradient, window_chrome
+from theme import MONO, THEMES, kicker, shell
 
 FILES = {"github-snake.svg": "light", "github-snake-dark.svg": "dark"}
-PAD_X, TOP, BOTTOM = 32, 60, 42
+PAD_X, TOP, BOTTOM = 32, 64, 18
 
 
 def frame(raw, c):
@@ -28,31 +29,22 @@ def frame(raw, c):
     H = int(TOP + vh + BOTTOM)
     attrs = re.sub(r'\s(?:width|height)="[^"]*"', "", m.group(1))
     inner = f'<svg x="{PAD_X}" y="{TOP}" width="{vw:g}" height="{vh:g}"{attrs}>' + raw[m.end():]
-    label = f'<tspan fill="{c["mint"]}">$</tspan> snake --eat contributions --user Kingvic300'
 
     # legend: the five dot colors snk used, read back from its CSS variables
     levels = dict(re.findall(r"--c([0-4]):(#[0-9a-fA-F]{3,8})", raw))
     legend, lx = [], W - PAD_X - 34
     for i in range(4, -1, -1):
         if str(i) in levels:
-            legend.append(f'<rect x="{lx - 12}" y="{H-27}" width="11" height="11" rx="2.5" fill="{levels[str(i)]}" '
+            legend.append(f'<rect x="{lx - 12}" y="31" width="11" height="11" rx="3" fill="{levels[str(i)]}" '
                           f'stroke="{c["border"]}" stroke-width="0.8"/>')
             lx -= 15
-    legend.append(f'<text x="{lx - 4}" y="{H-17}" text-anchor="end" font-family="{MONO}" font-size="12" fill="{c["muted"]}">less</text>')
-    legend.append(f'<text x="{W-PAD_X}" y="{H-17}" text-anchor="end" font-family="{MONO}" font-size="12" fill="{c["muted"]}">more</text>')
+    legend.append(f'<text x="{lx - 4}" y="41" text-anchor="end" font-family="{MONO}" font-size="12" fill="{c["muted"]}">less</text>')
+    legend.append(f'<text x="{W-PAD_X}" y="41" text-anchor="end" font-family="{MONO}" font-size="12" fill="{c["muted"]}">more</text>')
 
-    return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" data-framed="1" width="{W}" height="{H}" '
-        f'viewBox="0 0 {W} {H}" role="img" aria-label="Contribution snake eating the last year of GitHub contributions">'
-        f'<defs>{accent_gradient(c)}</defs>'
-        f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="18" fill="{c["bg"]}" stroke="{c["border"]}" stroke-width="2"/>'
-        f'{window_chrome(c, W, label, "refreshed every 12h")}'
-        f'{inner}'
-        f'<text x="{PAD_X}" y="{H-17}" font-family="{MONO}" font-size="12" fill="{c["muted"]}">last 12 months</text>'
-        f'{"".join(legend)}'
-        f'<rect x="1" y="{H-6}" width="{W-2}" height="5" rx="2.5" fill="url(#accent)"/>'
-        f'</svg>\n'
-    )
+    body = (kicker(PAD_X, 41, "Contribution snake · last 12 months", c, color=c["accent"])
+            + "".join(legend) + inner)
+    out = shell(W, H, c, "Contribution snake eating the last year of GitHub contributions", body, rx=18)
+    return out.replace("<svg ", '<svg data-framed="1" ', 1)
 
 
 def main():
