@@ -83,12 +83,10 @@ TXIO Labs is currently part of the [GrantFox](https://grantfox.xyz) open source 
 
 <sub>Both are local-first desktop apps: no telemetry, and your data stays on your computer. Issues and pull requests are welcome.</sub>
 
-## Hackathon wins
+## Hackathons
 
 <p>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/hack-ecx-dark.svg"><img alt="ECX 5.0: winner at the Engineering Career Expo's 2025 tech programme in Lagos." src="assets/cards/hack-ecx-light.svg" width="266"></picture>
-  <a href="https://izabi.halixe.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/hack-izabi-dark.svg"><img alt="Izabi AI: 1st place at the Izabi AI Hackathon 2025, an AI learning assistant." src="assets/cards/hack-izabi-light.svg" width="266"></picture></a>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/hack-inkluziv-dark.svg"><img alt="INKLUZIV: 1st place at the INKLUZIV Hackathon 2024, a voice-guided web app for visually impaired users." src="assets/cards/hack-inkluziv-light.svg" width="266"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/hack-ecx-dark.svg"><img alt="ECX 5.0: winner at the Engineering Career Expo's 2025 tech programme in Lagos." src="assets/cards/hack-ecx-light.svg" width="400"></picture>
 </p>
 
 ## Experience

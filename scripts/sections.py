@@ -40,15 +40,9 @@ EXPERIENCE = [
 ]
 
 HACKATHONS = {
-    "hack-ecx": dict(title="ECX 5.0", kicker="ecx · 2025", status="winner",
+    "hack-ecx": dict(title="ECX 5.0", kicker="engineering career expo · 2025", status="winner",
         text="Won at ECX 5.0, the Engineering Career Expo's 2025 tech programme and grand finale in Lagos.",
         tags=["Lagos", "2025"]),
-    "hack-izabi": dict(title="Izabi AI", kicker="izabi ai hackathon · 2025", status="1st place", cta="Visit Izabi AI",
-        text="An AI-powered learning assistant that generates exam questions, adaptive practice and personalised study plans.",
-        tags=["Python", "AI", "EdTech"]),
-    "hack-inkluziv": dict(title="INKLUZIV", kicker="inkluziv hackathon · 2024", status="1st place",
-        text="A web app for visually impaired users, with voice-guided navigation from end to end.",
-        tags=["Accessibility", "Voice UI"]),
 }
 
 # (label, simple-icons slug or None, brand color or None for the text color)
@@ -133,7 +127,7 @@ def stack(c):
 
 
 def main():
-    h = max(item_height(d, 266) for d in HACKATHONS.values())
+    h = max(item_height(d, 400) for d in HACKATHONS.values())
     for theme, c in THEMES.items():
         with open(os.path.join(ASSETS, f"experience-{theme}.svg"), "w", encoding="utf-8") as f:
             f.write(experience(c))
@@ -141,7 +135,7 @@ def main():
             f.write(stack(c))
         for name, d in HACKATHONS.items():
             with open(os.path.join(ASSETS, "cards", f"{name}-{theme}.svg"), "w", encoding="utf-8") as f:
-                f.write(item_card(d, c, h, 266))
+                f.write(item_card(d, c, h, 400))
     print("wrote experience, stack and", len(HACKATHONS) * 2, "hackathon cards")
 
 
