@@ -50,8 +50,6 @@ HACKATHONS = {
 
 # (label, simple-icons slug or None, brand color or None for the text color)
 STACK = [
-    ("Languages", [("TypeScript", "typescript", "#3178C6"), ("Java", "openjdk", None), ("Python", "python", "#3776AB"),
-                   ("Rust", "rust", None), ("Solidity", "solidity", None)]),
     ("Backend", [("Node.js", "nodedotjs", "#5FA04E"), ("NestJS", "nestjs", "#E0234E"), ("Spring", "spring", "#6DB33F"),
                  ("Django", "django", None), ("Axum", "rust", None), ("Swagger", "swagger", "#85EA2D")]),
     ("Data", [("PostgreSQL", "postgresql", "#4169E1"), ("MongoDB", "mongodb", "#47A248"), ("Redis", "redis", "#FF4438"),
@@ -59,7 +57,8 @@ STACK = [
     ("AI", [("LLMs & agents", None, None), ("scikit-learn", "scikitlearn", "#F7931E"), ("pandas", "pandas", None),
             ("TF-IDF", None, None)]),
     ("Web3", [("Sui · Move", "sui", "#4DA2FF"), ("Ethereum", "ethereum", None), ("Solana", "solana", "#9945FF"),
-              ("Stellar · Soroban", "stellar", None), ("Aptos", None, None)]),
+              ("Stellar · Soroban", "stellar", None), ("Solidity", "solidity", None),
+              ("Aptos", None, None)]),
     ("Frontend & desktop", [("React", "react", "#61DAFB"), ("Next.js", "nextdotjs", None), ("Tailwind", "tailwindcss", "#06B6D4"),
                             ("Tauri", "tauri", "#FFC131"), ("Electron", "electron", "#47848F")]),
     ("DevOps & tools", [("Docker", "docker", "#2496ED"), ("GitHub Actions", "githubactions", "#2088FF"), ("Git", "git", "#F05032"),
@@ -97,36 +96,61 @@ def experience(c):
         top + line + "".join(rows), rx=18)
 
 
-def chip(x, y, name, slug, color, c):
-    w = len(name) * 7.5 + 48
-    col = color or c["text"]
+DRIVERS = [("TypeScript", "typescript", "#3178C6"), ("Rust", "rust", None), ("Java", "openjdk", None),
+           ("Python", "python", "#3776AB"), ("NestJS", "nestjs", "#E0234E"), ("Spring", "spring", "#6DB33F"),
+           ("PostgreSQL", "postgresql", "#4169E1"), ("Sui · Move", "sui", "#4DA2FF")]
+
+
+def logo(slug, x, y, size, color, c):
+    scale = size / 24
     if slug:
-        icon = (f'<g transform="translate({x+12} {y+9}) scale(0.6667)"><path fill="{col}" d="{PATHS[slug]}"/></g>')
-    else:
-        icon = f'<g transform="translate({x+12} {y+9}) scale(0.6667)">{DOT.format(col=c["accent"])}</g>'
-    return w, (f'<rect x="{x:.0f}" y="{y}" width="{w:.0f}" height="34" rx="9" fill="{c["bg"]}" stroke="{c["border"]}"/>'
-               + icon
-               + f'<text x="{x+36:.0f}" y="{y+22}" font-family="{SANS}" font-size="14" fill="{c["text"]}">{escape(name)}</text>')
+        return (f'<g transform="translate({x:.1f} {y:.1f}) scale({scale:.4f})">'
+                f'<path fill="{color or c["text"]}" d="{PATHS[slug]}"/></g>')
+    return f'<g transform="translate({x:.1f} {y:.1f}) scale({scale:.4f})">{DOT.format(col=c["accent"])}</g>'
+
+
+def icon_tile(x, y, w, h, name, slug, color, c, size, label_size):
+    return (f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h}" rx="12" fill="{c["bg"]}" stroke="{c["border"]}"/>'
+            + logo(slug, x + (w - size) / 2, y + 14, size, color, c)
+            + f'<text x="{x + w/2:.1f}" y="{y + h - 13}" text-anchor="middle" font-family="{SANS}" '
+              f'font-size="{label_size}" fill="{c["muted"]}">{escape(name)}</text>')
 
 
 def stack(c):
-    W, x0, gap = 880, 210, 8
-    y = 76
-    out = [kicker(32, 46, "Tools I reach for", c, color=c["accent"])]
-    for label, items in STACK:
-        out.append(kicker(32, y + 22, label, c))
-        x = x0
-        for name, slug, color in items:
-            w, svg = chip(x, y, name, slug, color, c)
-            if x + w > W - 32:
-                x, y = x0, y + 44
-                w, svg = chip(x, y, name, slug, color, c)
-            out.append(svg)
-            x += w + gap
-        y += 50
-    H = y + 14
-    return shell(W, H, c, "Tech stack: " + "; ".join(
+    W, pad, gap = 880, 32, 10
+    out = [kicker(pad, 46, "Daily drivers", c, color=c["accent"]),
+           kicker(W - pad, 46, "what I reach for first", c, anchor="end")]
+    n = len(DRIVERS)
+    tw = (W - 2 * pad - gap * (n - 1)) / n
+    for i, (name, slug, color) in enumerate(DRIVERS):
+        out.append(icon_tile(pad + i * (tw + gap), 64, tw, 92, name, slug, color, c, 34, 12.5))
+
+    # category panels, two per row; each panel is a small icon grid
+    drivers = {d[0] for d in DRIVERS}
+    panels = [(label, [t for t in items if t[0] not in drivers]) for label, items in STACK]
+    panels = [(label, items) for label, items in panels if items]
+    pw = (W - 2 * pad - 16) / 2
+    cell, cgap = 66, 8
+    per_row = int((pw - 32 + cgap) // (cell + cgap))
+    y = 188
+    for r in range(0, len(panels), 2):
+        row = panels[r:r + 2]
+        rows_needed = max((len(items) + per_row - 1) // per_row for _, items in row)
+        ph = 52 + rows_needed * (74 + cgap) + 8
+        for k, (label, items) in enumerate(row):
+            px = pad + k * (pw + 16)
+            out.append(f'<rect x="{px:.1f}" y="{y}" width="{pw:.1f}" height="{ph}" rx="14" fill="none" stroke="{c["border"]}"/>')
+            out.append(kicker(px + 16, y + 30, label, c))
+            for j, (name, slug, color) in enumerate(items):
+                cx = px + 16 + (j % per_row) * (cell + cgap)
+                cy = y + 46 + (j // per_row) * (74 + cgap)
+                short = name if len(name) <= 10 else name.split(" ")[0]
+                out.append(icon_tile(cx, cy, cell, 74, short, slug, color, c, 24, 11))
+        y += ph + 16
+    H = y + 16
+    return shell(W, H, c, "Tech stack. Daily drivers: " + ", ".join(d[0] for d in DRIVERS) + ". " + "; ".join(
         f'{label}: ' + ", ".join(n for n, _, _ in items) for label, items in STACK), "".join(out), rx=18)
+
 
 
 INTRO = dict(

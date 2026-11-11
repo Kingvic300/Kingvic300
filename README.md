@@ -15,7 +15,7 @@
 <p align="center">
   <a href="https://kingvic.xyz"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-FF7A1A?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
   <a href="https://www.linkedin.com/in/victor-oladimeji-a5a68428b/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMC40NDcgMjAuNDUyaC0zLjU1NHYtNS41NjljMC0xLjMyOC0uMDI3LTMuMDM3LTEuODUyLTMuMDM3LTEuODUzIDAtMi4xMzYgMS40NDUtMi4xMzYgMi45Mzl2NS42NjdIOS4zNTFWOWgzLjQxNHYxLjU2MWguMDQ2Yy40NzctLjkgMS42MzctMS44NSAzLjM3LTEuODUgMy42MDEgMCA0LjI2NyAyLjM3IDQuMjY3IDUuNDU1djYuMjg2ek01LjMzNyA3LjQzM2MtMS4xNDQgMC0yLjA2My0uOTI2LTIuMDYzLTIuMDY1IDAtMS4xMzguOTItMi4wNjMgMi4wNjMtMi4wNjMgMS4xNCAwIDIuMDY0LjkyNSAyLjA2NCAyLjA2MyAwIDEuMTM5LS45MjUgMi4wNjUtMi4wNjQgMi4wNjV6bTEuNzgyIDEzLjAxOUgzLjU1NVY5aDMuNTY0djExLjQ1MnpNMjIuMjI1IDBIMS43NzFDLjc5MiAwIDAgLjc3NCAwIDEuNzI5djIwLjU0MkMwIDIzLjIyNy43OTIgMjQgMS43NzEgMjRoMjAuNDUxQzIzLjIgMjQgMjQgMjMuMjI3IDI0IDIyLjI3MVYxLjcyOUMyNCAuNzc0IDIzLjIgMCAyMi4yMjIgMGguMDAzeiIvPjwvc3ZnPg%3D%3D"></a>
-  <a href="https://x.com/voladimeji"><img alt="X: @voladimeji" src="https://img.shields.io/badge/@voladimeji-000000?style=for-the-badge&logo=x&logoColor=white"></a>
+  <a href="https://x.com/king_vic07"><img alt="X: @king_vic07" src="https://img.shields.io/badge/@king__vic07-000000?style=for-the-badge&logo=x&logoColor=white"></a>
   <a href="mailto:victor7ishola@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
   <a href="https://github.com/txio-labs"><img alt="TXIO Labs on GitHub" src="https://img.shields.io/badge/TXIO_Labs-24292F?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/Kingvic300?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/Kingvic300?style=for-the-badge&logo=github&logoColor=white&label=followers&labelColor=24292F&color=FF7A1A"></a>
@@ -174,7 +174,7 @@ I'm always up for a good problem: backend systems, AI workflows, or Web3 develop
   <a href="https://kingvic.xyz"><img alt="Portfolio" src="assets/icons/portfolio.svg" width="44"></a>&nbsp;
   <a href="https://www.linkedin.com/in/victor-oladimeji-a5a68428b/"><img alt="LinkedIn" src="assets/icons/linkedin.svg" width="44"></a>&nbsp;
   <a href="mailto:victor7ishola@gmail.com"><img alt="Email" src="assets/icons/gmail.svg" width="44"></a>&nbsp;
-  <a href="https://x.com/voladimeji"><img alt="X" src="assets/icons/x.svg" width="44"></a>&nbsp;
+  <a href="https://x.com/king_vic07"><img alt="X" src="assets/icons/x.svg" width="44"></a>&nbsp;
   <a href="https://github.com/txio-labs"><img alt="TXIO Labs on GitHub" src="assets/icons/github.svg" width="44"></a>&nbsp;
   <a href="https://github.com/sponsors/Kingvic300"><img alt="Sponsor on GitHub" src="assets/icons/githubsponsors.svg" width="44"></a>
 </p>
