@@ -40,6 +40,9 @@ EXPERIENCE = [
 ]
 
 HACKATHONS = {
+    "hack-digitaldrive": dict(title="DigitalDrive", kicker="digitaldrive hackathon", status="1st place",
+        text="First place at the DigitalDrive hackathon, won as a team.",
+        tags=["Team build"]),
     "hack-ecx": dict(title="ECX 5.0", kicker="engineering career expo · 2025", status="winner",
         text="Won at ECX 5.0, the Engineering Career Expo's 2025 tech programme and grand finale in Lagos.",
         tags=["Lagos", "2025"]),

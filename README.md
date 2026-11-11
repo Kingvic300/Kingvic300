@@ -86,6 +86,7 @@ TXIO Labs is currently part of the [GrantFox](https://grantfox.xyz) open source 
 ## Hackathons
 
 <p>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/hack-digitaldrive-dark.svg"><img alt="DigitalDrive hackathon: first place, team win." src="assets/cards/hack-digitaldrive-light.svg" width="400"></picture>
   <picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/hack-ecx-dark.svg"><img alt="ECX 5.0: winner at the Engineering Career Expo's 2025 tech programme in Lagos." src="assets/cards/hack-ecx-light.svg" width="400"></picture>
 </p>
 
