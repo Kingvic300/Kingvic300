@@ -20,8 +20,8 @@ ASSETS = os.path.join(ROOT, "assets")
 # newest first; role=None shows only the company
 EXPERIENCE = [
     dict(company="TechB", role=None, period="Now",
-         text="Building TechB, a fintech app."),
-    dict(company="TXIO Labs", role=None, period="Now",
+         text="TechB (tec-bank.com), a trusted real-time payment platform for managing and growing wealth."),
+    dict(company="TXIO Labs", role="Founder, CTO & Developer", period="Now",
          text="Multi-chain developer tooling: web app, CLI, desktop app and API. Part of the GrantFox open source program."),
     dict(company="Naelix Tech Group", role="Full Stack Engineer", period="Mar 2026 – now",
          text="Node.js, NestJS, PostgreSQL and Redis services for a startup building digital products for businesses and individuals."),

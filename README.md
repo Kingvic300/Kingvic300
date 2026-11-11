@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  I'm a Full-Stack Engineer who lives in the backend and ships frontend every sprint. I build APIs, AI-powered platforms and developer tools, and I spend most of my time at <b><a href="https://github.com/txio-labs">TXIO Labs</a></b> building multi-chain tooling for Web3 developers.
+  I'm a Full-Stack Engineer who lives in the backend and ships frontend every sprint. I build APIs, AI-powered platforms and developer tools, and I'm the founder and CTO of <b><a href="https://github.com/txio-labs">TXIO Labs</a></b>, where we build multi-chain tooling for Web3 developers.
 </p>
 
 <p align="center">
@@ -93,10 +93,11 @@ TXIO Labs is currently part of the [GrantFox](https://grantfox.xyz) open source 
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/experience-dark.svg">
-  <img alt="Experience: TechB; TXIO Labs; Naelix Tech Group, Full Stack Engineer; Maseev Invisible Digitals, Backend Engineer; Steerify, Co-Founder; CVtoCareer, Full-Stack Engineer; Raoatech, Software Development Instructor; Sabiedu, Agentic AI Engineer; Semicolon Africa, Trainee Developer." src="assets/experience-light.svg" width="100%">
+  <img alt="Experience: TechB; TXIO Labs, Founder, CTO and Developer; Naelix Tech Group, Full Stack Engineer; Maseev Invisible Digitals, Backend Engineer; Steerify, Co-Founder; CVtoCareer, Full-Stack Engineer; Raoatech, Software Development Instructor; Sabiedu, Agentic AI Engineer; Semicolon Africa, Trainee Developer." src="assets/experience-light.svg" width="100%">
 </picture>
 
 <sub>
+  <a href="https://tec-bank.com/">TechB</a> ·
   <a href="https://cvtocareer.com">CVtoCareer</a> ·
   <a href="https://semicolon.africa">Semicolon Africa</a> ·
   <a href="https://github.com/txio-labs">TXIO Labs</a> ·
@@ -135,6 +136,44 @@ TXIO Labs is currently part of the [GrantFox](https://grantfox.xyz) open source 
   <img alt="A snake eating the last year of Kingvic300's GitHub contributions." src="https://raw.githubusercontent.com/Kingvic300/Kingvic300/output/github-snake.svg" width="100%">
 </picture>
 
+## Buy me a coffee ☕
+
+If my tools saved you time, you can buy me a coffee. GitHub Sponsors works, or send a tip in crypto to any address below (click the copy button on each block).
+
+<p>
+  <a href="https://github.com/sponsors/Kingvic300"><img alt="Sponsor on GitHub" src="https://img.shields.io/badge/Sponsor_on_GitHub-BF3989?style=for-the-badge&logo=githubsponsors&logoColor=white"></a>
+</p>
+
+<img alt="Stellar" src="https://img.shields.io/badge/Stellar-XLM-15171A?style=flat-square&logo=stellar&logoColor=white&labelColor=15171A&color=FF7A1A">
+
+```text
+GD6ERGKBPEZJG52DJ2N24RIPX3F3BPJ4UUBCJLS763L2JXBHJQWVU6KZ
+```
+
+<img alt="Sui" src="https://img.shields.io/badge/Sui-SUI-15171A?style=flat-square&logo=sui&logoColor=4DA2FF&labelColor=15171A&color=FF7A1A">
+
+```text
+0x10735ec3c80f136c482c694d5cba775ee1ac7f971686fcd3d47f3f0175e5ff8b
+```
+
+<img alt="Bitcoin" src="https://img.shields.io/badge/Bitcoin-BTC-15171A?style=flat-square&logo=bitcoin&logoColor=F7931A&labelColor=15171A&color=FF7A1A">
+
+```text
+bc1qrfpkjhm30sfupxa3d597svwz9k8747syrl3xx3
+```
+
+<img alt="Ethereum" src="https://img.shields.io/badge/Ethereum-ETH_·_EVM-15171A?style=flat-square&logo=ethereum&logoColor=white&labelColor=15171A&color=FF7A1A">
+
+```text
+0xf384A807E892733E8265747CdcC9928a2cD06a76
+```
+
+<img alt="Solana" src="https://img.shields.io/badge/Solana-SOL-15171A?style=flat-square&logo=solana&logoColor=9945FF&labelColor=15171A&color=FF7A1A">
+
+```text
+3hbCiggYJpn2F2nswJFu6hHZqwdDUZWW23K3brRe6Kkk
+```
+
 ## Let's build something
 
 I'm always up for a good problem: backend systems, AI workflows, or Web3 developer tooling. If you have an idea worth shipping, want to contribute to TXIO, Huntly or Forma, or just want to trade notes, my inbox is open.
@@ -146,12 +185,6 @@ I'm always up for a good problem: backend systems, AI workflows, or Web3 develop
   <a href="https://x.com/voladimeji"><img alt="X" src="assets/icons/x.svg" width="44"></a>&nbsp;
   <a href="https://github.com/txio-labs"><img alt="TXIO Labs on GitHub" src="assets/icons/github.svg" width="44"></a>&nbsp;
   <a href="https://github.com/sponsors/Kingvic300"><img alt="Sponsor on GitHub" src="assets/icons/githubsponsors.svg" width="44"></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/sponsors/Kingvic300"><img alt="Sponsor Kingvic300" src="https://img.shields.io/badge/Sponsor_my_open_source-BF3989?style=for-the-badge&logo=githubsponsors&logoColor=white"></a>
-  <br>
-  <sub>Huntly and Forma are free. Sponsoring keeps them that way.</sub>
 </p>
 
 <p align="center">
