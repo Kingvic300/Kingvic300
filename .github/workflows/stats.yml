@@ -11,6 +11,8 @@ on:
       - assets/stats-dark.svg
       - assets/activity-light.svg
       - assets/activity-dark.svg
+      - assets/oss-stats-light.svg
+      - assets/oss-stats-dark.svg
 
 permissions:
   contents: write # only to commit the regenerated SVGs
@@ -37,7 +39,7 @@ jobs:
 
       - name: Commit if changed
         run: |
-          git add assets/stats-light.svg assets/stats-dark.svg assets/activity-light.svg assets/activity-dark.svg
+          git add assets/stats-light.svg assets/stats-dark.svg assets/activity-light.svg assets/activity-dark.svg assets/oss-stats-light.svg assets/oss-stats-dark.svg
           if git diff --cached --quiet; then
             echo "No changes."
             exit 0

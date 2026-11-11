@@ -106,6 +106,69 @@ def render(user, c):
                  "".join(out), rx=18)
 
 
+OSS = [("Kingvic300", "Huntly", "Private job-hunting assistant"),
+       ("Kingvic300", "Forma", "Offline desktop office suite")]
+
+OSS_QUERY = """
+query($owner: String!, $name: String!) {
+  repository(owner: $owner, name: $name) {
+    stargazerCount forkCount
+    issues(states: OPEN) { totalCount }
+    latestRelease { tagName }
+    releases(first: 100) { nodes { releaseAssets(first: 50) { nodes { downloadCount } } } }
+  }
+}
+"""
+
+
+def gql(token, query, variables):
+    req = urllib.request.Request(
+        "https://api.github.com/graphql",
+        data=json.dumps({"query": query, "variables": variables}).encode(),
+        headers={"Authorization": f"bearer {token}", "User-Agent": "profile-readme-activity"},
+    )
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        payload = json.load(resp)
+    if payload.get("errors") or not payload.get("data"):
+        raise RuntimeError(payload.get("errors"))
+    return payload["data"]
+
+
+def fetch_oss(token):
+    out = []
+    for owner, name, tagline in OSS:
+        r = gql(token, OSS_QUERY, {"owner": owner, "name": name})["repository"]
+        downloads = sum(a["downloadCount"] for rel in r["releases"]["nodes"] for a in rel["releaseAssets"]["nodes"])
+        out.append(dict(name=name, tagline=tagline, stars=r["stargazerCount"], forks=r["forkCount"],
+                        issues=r["issues"]["totalCount"], downloads=downloads,
+                        version=(r["latestRelease"] or {}).get("tagName") or "unreleased"))
+    return out
+
+
+def render_oss(projects, c):
+    W, H = 880, 196
+    col_w = (W - 64 - 16) / 2
+    out = [kicker(32, 42, "Open source by the numbers", c, color=c["accent"]),
+           kicker(W - 32, 42, "local-first · no telemetry · PRs welcome", c, anchor="end")]
+    for i, p in enumerate(projects):
+        x = 32 + i * (col_w + 16)
+        out.append(f'<rect x="{x:.1f}" y="62" width="{col_w:.1f}" height="110" rx="12" fill="{c["bg"]}" stroke="{c["border"]}"/>')
+        out.append(f'<text x="{x+18:.1f}" y="92" font-family="{SANS}" font-size="17" font-weight="700" fill="{c["text"]}">{escape(p["name"])}</text>')
+        vw = len(p["version"]) * 7.4 + 16
+        out.append(f'<rect x="{x+col_w-18-vw:.1f}" y="76" width="{vw:.1f}" height="22" rx="6" fill="{c["accent_soft"]}"/>')
+        out.append(f'<text x="{x+col_w-18-vw/2:.1f}" y="91" text-anchor="middle" font-family="{MONO}" font-size="12" '
+                   f'fill="{c["accent"]}">{escape(p["version"])}</text>')
+        stats = [(p["downloads"], "downloads"), (p["stars"], "stars"), (p["forks"], "forks"), (p["issues"], "open issues")]
+        sw = (col_w - 36) / 4
+        for j, (val, label) in enumerate(stats):
+            sx = x + 18 + j * sw
+            out.append(f'<text x="{sx:.1f}" y="136" font-family="{SANS}" font-size="22" font-weight="700" '
+                       f'fill="{c["accent"] if j == 0 else c["text"]}">{val:,}</text>')
+            out.append(f'<text x="{sx:.1f}" y="156" font-family="{MONO}" font-size="11.5" fill="{c["muted"]}">{label}</text>')
+    desc = "; ".join(f'{p["name"]} {p["version"]}: {p["downloads"]:,} downloads, {p["stars"]} stars' for p in projects)
+    return shell(W, H, c, "Open source stats: " + desc, "".join(out), rx=18)
+
+
 def main():
     token = os.environ.get("GITHUB_TOKEN")
     if not token:
@@ -117,7 +180,14 @@ def main():
     for name, colors in THEMES.items():
         with open(os.path.join(OUT_DIR, f"activity-{name}.svg"), "w", encoding="utf-8") as f:
             f.write(render(user, colors))
-    print("wrote activity cards")
+    try:
+        projects = fetch_oss(token)
+    except Exception as exc:
+        sys.exit(f"Open source stats unavailable ({exc}); leaving that card untouched.")
+    for name, colors in THEMES.items():
+        with open(os.path.join(OUT_DIR, f"oss-stats-{name}.svg"), "w", encoding="utf-8") as f:
+            f.write(render_oss(projects, colors))
+    print("wrote activity and open source cards")
 
 
 if __name__ == "__main__":

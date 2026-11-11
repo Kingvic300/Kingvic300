@@ -40,12 +40,12 @@
 
 ## Building at TXIO Labs
 
-<p>
-  <a href="https://grantfox.xyz"><img alt="GrantFox open source program" src="https://img.shields.io/badge/GrantFox-open_source_program-FF7A1A?style=for-the-badge&labelColor=15171A"></a>
-  <a href="https://github.com/txio-labs"><img alt="Open for contributions" src="https://img.shields.io/badge/contributions-open-3FB950?style=for-the-badge&labelColor=15171A&logo=github&logoColor=white"></a>
-</p>
-
-TXIO Labs is currently part of the [GrantFox](https://grantfox.xyz) open source program, the community collaboration hub for the Stellar ecosystem. Every TXIO repo is open for contributions: pick an issue, open a pull request, and build with us.
+<a href="https://grantfox.xyz">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/grantfox-dark.svg">
+  <img alt="TXIO Labs is part of the GrantFox open source program for the Stellar ecosystem. Every TXIO repo is open for contributions." src="assets/grantfox-light.svg" width="100%">
+</picture>
+</a>
 
 <p>
   <a href="https://txio.xyz"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/project-txio-dark.svg"><img alt="TXIO: an API client and visual transaction builder for Sui. Live at txio.xyz." src="assets/cards/project-txio-light.svg" width="266"></picture></a>
@@ -53,13 +53,12 @@ TXIO Labs is currently part of the [GrantFox](https://grantfox.xyz) open source 
   <a href="https://txio-labs.github.io/txio-desktop/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/project-txio-desktop-dark.svg"><img alt="TXIO Desktop: the TXIO console as a Tauri desktop app. Download." src="assets/cards/project-txio-desktop-light.svg" width="266"></picture></a>
 </p>
 
-<sub>
-  The rest of the stack is open too:
-  <a href="https://github.com/txio-labs/txio-backend">txio-backend</a> (Rust, Axum, MongoDB) ·
-  <a href="https://github.com/txio-labs/txio-sdk">txio-sdk</a> (TypeScript) ·
-  <a href="https://github.com/txio-labs/txio-telegram-bot">txio-telegram-bot</a> (GitHub to Telegram ops bot) ·
-  <a href="https://github.com/txio-labs">everything in the org</a>
-</sub>
+<p>
+  <a href="https://github.com/txio-labs/txio-backend"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/repo-txio-backend-dark.svg"><img alt="txio-backend: Rust, Axum and MongoDB API" src="assets/cards/repo-txio-backend-light.svg" width="208"></picture></a>
+  <a href="https://github.com/txio-labs/txio-sdk"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/repo-txio-sdk-dark.svg"><img alt="txio-sdk: TypeScript SDK" src="assets/cards/repo-txio-sdk-light.svg" width="208"></picture></a>
+  <a href="https://github.com/txio-labs/txio-telegram-bot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/repo-txio-telegram-bot-dark.svg"><img alt="txio-telegram-bot: GitHub to Telegram ops bot" src="assets/cards/repo-txio-telegram-bot-light.svg" width="208"></picture></a>
+  <a href="https://github.com/txio-labs"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/repo-txio-all-dark.svg"><img alt="All TXIO Labs repositories" src="assets/cards/repo-txio-all-light.svg" width="208"></picture></a>
+</p>
 
 ## Open source
 
@@ -68,13 +67,12 @@ TXIO Labs is currently part of the [GrantFox](https://grantfox.xyz) open source 
   <a href="https://kingvic300.github.io/Forma/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/oss-forma-dark.svg"><img alt="Forma: a free, offline desktop office app for documents, sheets, forms and PDFs. Download Forma." src="assets/cards/oss-forma-light.svg" width="400"></picture></a>
 </p>
 
-<a href="https://github.com/Kingvic300/Huntly"><img alt="Huntly stars" src="https://img.shields.io/github/stars/Kingvic300/Huntly?style=flat-square&labelColor=15171A&color=FF7A1A&logo=github&label=Huntly"></a>
-<a href="https://github.com/Kingvic300/Forma"><img alt="Forma stars" src="https://img.shields.io/github/stars/Kingvic300/Forma?style=flat-square&labelColor=15171A&color=FF7A1A&logo=github&label=Forma"></a>
-<a href="https://github.com/Kingvic300/Huntly/releases"><img alt="Huntly downloads" src="https://img.shields.io/github/downloads/Kingvic300/Huntly/total?style=flat-square&labelColor=15171A&color=FF7A1A&label=Huntly%20downloads"></a>
-<a href="https://github.com/Kingvic300/Forma/releases"><img alt="Forma downloads" src="https://img.shields.io/github/downloads/Kingvic300/Forma/total?style=flat-square&labelColor=15171A&color=FF7A1A&label=Forma%20downloads"></a>
-<a href="https://github.com/Kingvic300/Forma/releases/latest"><img alt="Forma latest release" src="https://img.shields.io/github/v/release/Kingvic300/Forma?style=flat-square&labelColor=15171A&color=FF7A1A&label=release"></a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/oss-stats-dark.svg">
+  <img alt="Open source stats for Huntly and Forma: downloads, stars, forks, open issues and latest version." src="assets/oss-stats-light.svg" width="100%">
+</picture>
 
-<sub>Both are local-first desktop apps: no telemetry, and your data stays on your computer. Issues and pull requests are welcome.</sub>
+<sub>Numbers refresh hourly from GitHub. Both apps are local-first: no telemetry, and your data stays on your computer.</sub>
 
 ## Hackathons
 

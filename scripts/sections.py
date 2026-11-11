@@ -189,6 +189,42 @@ def link_pill(label, c):
             f'stroke-linecap="round" stroke-linejoin="round"/></svg>\n')
 
 
+REPO_TILES = {
+    "txio-backend": ("txio-backend", "Rust · Axum · MongoDB API"),
+    "txio-sdk": ("txio-sdk", "TypeScript SDK"),
+    "txio-telegram-bot": ("txio-telegram-bot", "GitHub to Telegram ops bot"),
+    "txio-all": ("All TXIO repos", "github.com/txio-labs"),
+}
+
+
+def repo_tile(name, desc, c):
+    w, h = 208, 66
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" '
+            f'aria-label="{escape(name)}: {escape(desc)}"><rect x="0.75" y="0.75" width="{w-1.5}" height="{h-1.5}" rx="12" '
+            f'fill="{c["surface"]}" stroke="{c["border"]}" stroke-width="1.5"/>'
+            f'<text x="16" y="28" font-family="{MONO}" font-size="13.5" font-weight="700" fill="{c["text"]}">{escape(name)}</text>'
+            f'<text x="16" y="48" font-family="{SANS}" font-size="12.5" fill="{c["muted"]}">{escape(desc)}</text>'
+            f'<path d="M{w-24} 27 l7 -7 M{w-22} 20 h5 v5" fill="none" stroke="{c["accent"]}" stroke-width="1.8" '
+            f'stroke-linecap="round" stroke-linejoin="round"/></svg>\n')
+
+
+def grantfox(c):
+    W = 880
+    text = ("TXIO Labs is part of GrantFox, the open source collaboration hub for the Stellar ecosystem. "
+            "Every TXIO repo is open for contributions: pick an issue, open a pull request, build with us.")
+    cta_w = 214
+    lines = wrap(text, 15, W - 64 - cta_w - 28)
+    H = 72 + 22 * (len(lines) - 1) + 32
+    body = (kicker(32, 42, "GrantFox open source program", c, color=c["accent"])
+            + text_block(32, 72, lines, 15, c["text"], 22)
+            + f'<rect x="{W-32-cta_w}" y="{H/2-22}" width="{cta_w}" height="44" rx="11" fill="{c["accent"]}"/>'
+            + f'<text x="{W-32-cta_w/2}" y="{H/2+5}" text-anchor="middle" font-family="{SANS}" font-size="15" '
+              f'font-weight="700" fill="#FFFFFF">Learn about GrantFox →</text>'
+            + f'<circle cx="290" cy="38" r="4" fill="{c["live"]}"/>'
+            + kicker(300, 42, "open for contributions", c))
+    return shell(W, H, c, "GrantFox open source program: " + text, body, rx=18)
+
+
 def main():
     h = max(item_height(d, 400) for d in HACKATHONS.values())
     for theme, c in THEMES.items():
@@ -198,6 +234,11 @@ def main():
             f.write(stack(c))
         with open(os.path.join(ASSETS, f"intro-{theme}.svg"), "w", encoding="utf-8") as f:
             f.write(intro(c))
+        with open(os.path.join(ASSETS, f"grantfox-{theme}.svg"), "w", encoding="utf-8") as f:
+            f.write(grantfox(c))
+        for key, (name, desc) in REPO_TILES.items():
+            with open(os.path.join(ASSETS, "cards", f"repo-{key}-{theme}.svg"), "w", encoding="utf-8") as f:
+                f.write(repo_tile(name, desc, c))
         os.makedirs(os.path.join(ASSETS, "links"), exist_ok=True)
         for key, label in LINKS.items():
             with open(os.path.join(ASSETS, "links", f"{key}-{theme}.svg"), "w", encoding="utf-8") as f:
