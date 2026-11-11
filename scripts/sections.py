@@ -40,8 +40,8 @@ EXPERIENCE = [
 ]
 
 HACKATHONS = {
-    "hack-digitaldrive": dict(title="Digitaley Drive", kicker="digitaley drive hackathon", status="1st place",
-        text="First place at the Digitaley Drive hackathon, won as a team.",
+    "hack-digitaldrive": dict(title="Digitaley Drive", kicker="digitaley drive hackathon", status="2nd place",
+        text="Second place at the Digitaley Drive hackathon, won as a team.",
         tags=["Team build"]),
     "hack-ecx": dict(title="ECX 5.0", kicker="engineering career expo · 2025", status="winner",
         text="Won at ECX 5.0, the Engineering Career Expo's 2025 tech programme and grand finale in Lagos.",
@@ -129,6 +129,66 @@ def stack(c):
         f'{label}: ' + ", ".join(n for n, _, _ in items) for label, items in STACK), "".join(out), rx=18)
 
 
+INTRO = dict(
+    greeting="Hey, I'm Victor",
+    handle="Most people on GitHub know me as Kingvic300.",
+    text=("I'm a full-stack engineer who lives in the backend and ships frontend every sprint. "
+          "I build APIs, AI-powered platforms and developer tools, and I'm the founder and CTO of "
+          "TXIO Labs, where we build multi-chain tooling for Web3 developers."),
+    motto="Clean code, real performance, and systems that hold up under pressure.",
+    facts=[("Founder & CTO", "TXIO Labs"), ("Open source", "Huntly · Forma"),
+           ("Hackathons", "2 podium finishes"), ("Based in", "Lagos, Nigeria")],
+)
+
+LINKS = {
+    "techb": "TechB", "cvtocareer": "CVtoCareer", "semicolon": "Semicolon Africa",
+    "txio": "TXIO Labs", "history": "Full history · kingvic.xyz",
+}
+
+
+def intro(c):
+    W = 880
+    lines = wrap(INTRO["text"], 16, W - 64)
+    y_text = 132
+    y_motto = y_text + 24 * len(lines) + 14
+    y_facts = y_motto + 34
+    fw = (W - 64 - 3 * 12) / 4
+    facts = "".join(
+        f'<rect x="{32 + i*(fw+12):.1f}" y="{y_facts}" width="{fw:.1f}" height="70" rx="12" fill="{c["bg"]}" stroke="{c["border"]}"/>'
+        + kicker(48 + i*(fw+12), y_facts + 28, k, c)
+        + f'<text x="{48 + i*(fw+12):.1f}" y="{y_facts + 52}" font-family="{SANS}" font-size="15" font-weight="700" '
+          f'fill="{c["text"]}">{escape(v)}</text>'
+        for i, (k, v) in enumerate(INTRO["facts"]))
+    H = y_facts + 70 + 32
+    body = (kicker(32, 46, "About me", c, color=c["accent"])
+            + f'<text x="32" y="90" font-family="{SANS}" font-size="30" font-weight="700" letter-spacing="-0.5" '
+              f'fill="{c["text"]}">{escape(INTRO["greeting"])}<tspan fill="{c["accent"]}">.</tspan></text>'
+            + f'<text x="{W-32}" y="88" text-anchor="end" font-family="{MONO}" font-size="13" fill="{c["muted"]}">'
+              f'{escape(INTRO["handle"])}</text>'
+            + text_block(32, y_text, lines, 16, c["text"], 24)
+            + f'<rect x="32" y="{y_motto-15}" width="3" height="20" rx="1.5" fill="{c["accent"]}"/>'
+            + f'<text x="46" y="{y_motto}" font-family="{SANS}" font-size="15" font-style="italic" fill="{c["muted"]}">'
+              f'{escape(INTRO["motto"])}</text>'
+            + facts)
+    return shell(W, H, c, "About: " + INTRO["text"], body, rx=18)
+
+
+def text_width(label, size=14):
+    """Rough width of bold sans text: capitals and digits are wider than lowercase."""
+    per = {" ": 0.30, ".": 0.30, "·": 0.32, ",": 0.30}
+    return sum(size * (per.get(ch) or (0.64 if ch.isupper() else 0.56 if ch.isdigit() else 0.51)) for ch in label)
+
+
+def link_pill(label, c):
+    w = int(text_width(label) + 48)
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="34" viewBox="0 0 {w} 34" role="img" '
+            f'aria-label="{escape(label)}"><rect x="0.75" y="0.75" width="{w-1.5}" height="32.5" rx="9" '
+            f'fill="{c["surface"]}" stroke="{c["border"]}" stroke-width="1.5"/>'
+            f'<text x="14" y="22" font-family="{SANS}" font-size="14" font-weight="600" fill="{c["text"]}">{escape(label)}</text>'
+            f'<path d="M{w-26} 21 l7 -7 M{w-24} 14 h5 v5" fill="none" stroke="{c["accent"]}" stroke-width="1.8" '
+            f'stroke-linecap="round" stroke-linejoin="round"/></svg>\n')
+
+
 def main():
     h = max(item_height(d, 400) for d in HACKATHONS.values())
     for theme, c in THEMES.items():
@@ -136,6 +196,12 @@ def main():
             f.write(experience(c))
         with open(os.path.join(ASSETS, f"stack-{theme}.svg"), "w", encoding="utf-8") as f:
             f.write(stack(c))
+        with open(os.path.join(ASSETS, f"intro-{theme}.svg"), "w", encoding="utf-8") as f:
+            f.write(intro(c))
+        os.makedirs(os.path.join(ASSETS, "links"), exist_ok=True)
+        for key, label in LINKS.items():
+            with open(os.path.join(ASSETS, "links", f"{key}-{theme}.svg"), "w", encoding="utf-8") as f:
+                f.write(link_pill(label, c))
         for name, d in HACKATHONS.items():
             with open(os.path.join(ASSETS, "cards", f"{name}-{theme}.svg"), "w", encoding="utf-8") as f:
                 f.write(item_card(d, c, h, 400))

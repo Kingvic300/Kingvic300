@@ -153,7 +153,7 @@ def focus_card(d, c, h):
 def item_height(d, w):
     lines = len(wrap(d["text"], 14, w - 44))
     rows = pill_rows(d["tags"], 22, w - 18)
-    return 148 + 20 * (lines - 1) + 18 + 30 * rows + 62
+    return 148 + 20 * (lines - 1) + 18 + 30 * rows + (62 if d.get("cta") or d.get("meta") else 20)
 
 
 def item_card(d, c, h, w):

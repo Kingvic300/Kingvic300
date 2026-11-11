@@ -5,19 +5,12 @@
   </picture>
 </a>
 
-<h1 align="center">Hey, I'm Victor Oladimeji 👋</h1>
+<br>
 
-<p align="center">
-  Most people on GitHub know me as <b>Kingvic300</b>.
-</p>
-
-<p align="center">
-  I'm a Full-Stack Engineer who lives in the backend and ships frontend every sprint. I build APIs, AI-powered platforms and developer tools, and I'm the founder and CTO of <b><a href="https://github.com/txio-labs">TXIO Labs</a></b>, where we build multi-chain tooling for Web3 developers.
-</p>
-
-<p align="center">
-  I care about clean code, performance, and systems that hold up under pressure.
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/intro-dark.svg">
+  <img alt="Hey, I'm Victor, known on GitHub as Kingvic300. I'm a full-stack engineer who lives in the backend and ships frontend every sprint. I build APIs, AI-powered platforms and developer tools, and I'm the founder and CTO of TXIO Labs, where we build multi-chain tooling for Web3 developers." src="assets/intro-light.svg" width="100%">
+</picture>
 
 <p align="center">
   <a href="https://kingvic.xyz"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-FF7A1A?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
@@ -86,7 +79,7 @@ TXIO Labs is currently part of the [GrantFox](https://grantfox.xyz) open source 
 ## Hackathons
 
 <p>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/hack-digitaldrive-dark.svg"><img alt="Digitaley Drive hackathon: first place, team win." src="assets/cards/hack-digitaldrive-light.svg" width="400"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/hack-digitaldrive-dark.svg"><img alt="Digitaley Drive hackathon: second place, team win." src="assets/cards/hack-digitaldrive-light.svg" width="400"></picture>
   <picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/hack-ecx-dark.svg"><img alt="ECX 5.0: winner at the Engineering Career Expo's 2025 tech programme in Lagos." src="assets/cards/hack-ecx-light.svg" width="400"></picture>
 </p>
 
@@ -97,13 +90,13 @@ TXIO Labs is currently part of the [GrantFox](https://grantfox.xyz) open source 
   <img alt="Experience: TechB; TXIO Labs, Founder, CTO and Developer; Naelix Tech Group, Full Stack Engineer; Maseev Invisible Digitals, Backend Engineer; Steerify, Co-Founder; CVtoCareer, Full-Stack Engineer; Raoatech, Software Development Instructor; Sabiedu, Agentic AI Engineer; Semicolon Africa, Trainee Developer." src="assets/experience-light.svg" width="100%">
 </picture>
 
-<sub>
-  <a href="https://tec-bank.com/">TechB</a> ·
-  <a href="https://cvtocareer.com">CVtoCareer</a> ·
-  <a href="https://semicolon.africa">Semicolon Africa</a> ·
-  <a href="https://github.com/txio-labs">TXIO Labs</a> ·
-  full history on <a href="https://kingvic.xyz/experience">kingvic.xyz</a>
-</sub>
+<p>
+  <a href="https://tec-bank.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/links/techb-dark.svg"><img alt="TechB" src="assets/links/techb-light.svg" height="34"></picture></a>
+  <a href="https://github.com/txio-labs"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/links/txio-dark.svg"><img alt="TXIO Labs" src="assets/links/txio-light.svg" height="34"></picture></a>
+  <a href="https://cvtocareer.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/links/cvtocareer-dark.svg"><img alt="CVtoCareer" src="assets/links/cvtocareer-light.svg" height="34"></picture></a>
+  <a href="https://semicolon.africa"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/links/semicolon-dark.svg"><img alt="Semicolon Africa" src="assets/links/semicolon-light.svg" height="34"></picture></a>
+  <a href="https://kingvic.xyz/experience"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/links/history-dark.svg"><img alt="Full history on kingvic.xyz" src="assets/links/history-light.svg" height="34"></picture></a>
+</p>
 
 ## Recently shipped
 
