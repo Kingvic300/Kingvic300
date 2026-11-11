@@ -78,10 +78,10 @@
 ## Experience
 
 <table>
-  <tr><td><b>TechB</b></td><td>Now. Building a fintech app.</td></tr>
+  <tr><td><b>TechB</b></td><td>Now. Engineering on TechB, a fintech app.</td></tr>
   <tr><td><b><a href="https://github.com/txio-labs">TXIO Labs</a></b></td><td>Now. Multi-chain developer tooling: web app, CLI, desktop app and API.</td></tr>
   <tr><td><b>CVtoCareer</b></td><td>Previously.</td></tr>
-  <tr><td><b><a href="https://semicolon.africa">Semicolon</a></b></td><td>Previously.</td></tr>
+  <tr><td><b><a href="https://semicolon.africa">Semicolon Africa</a></b></td><td>Previously. Software engineering at Semicolon Africa, Lagos.</td></tr>
 </table>
 
 ## Tech stack
