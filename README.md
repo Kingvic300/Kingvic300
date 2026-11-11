@@ -1,4 +1,4 @@
-<a href="https://kingvic-portfolio.vercel.app">
+<a href="https://kingvic.xyz">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
     <img alt="Victor Oladimeji: full-stack engineer working on backend, AI and Web3" src="assets/banner-light.svg" width="100%">
@@ -20,8 +20,9 @@
 </p>
 
 <p align="center">
-  <a href="https://kingvic-portfolio.vercel.app"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-FF7A1A?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
+  <a href="https://kingvic.xyz"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-FF7A1A?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
   <a href="https://www.linkedin.com/in/victor-oladimeji-a5a68428b/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMC40NDcgMjAuNDUyaC0zLjU1NHYtNS41NjljMC0xLjMyOC0uMDI3LTMuMDM3LTEuODUyLTMuMDM3LTEuODUzIDAtMi4xMzYgMS40NDUtMi4xMzYgMi45Mzl2NS42NjdIOS4zNTFWOWgzLjQxNHYxLjU2MWguMDQ2Yy40NzctLjkgMS42MzctMS44NSAzLjM3LTEuODUgMy42MDEgMCA0LjI2NyAyLjM3IDQuMjY3IDUuNDU1djYuMjg2ek01LjMzNyA3LjQzM2MtMS4xNDQgMC0yLjA2My0uOTI2LTIuMDYzLTIuMDY1IDAtMS4xMzguOTItMi4wNjMgMi4wNjMtMi4wNjMgMS4xNCAwIDIuMDY0LjkyNSAyLjA2NCAyLjA2MyAwIDEuMTM5LS45MjUgMi4wNjUtMi4wNjQgMi4wNjV6bTEuNzgyIDEzLjAxOUgzLjU1NVY5aDMuNTY0djExLjQ1MnpNMjIuMjI1IDBIMS43NzFDLjc5MiAwIDAgLjc3NCAwIDEuNzI5djIwLjU0MkMwIDIzLjIyNy43OTIgMjQgMS43NzEgMjRoMjAuNDUxQzIzLjIgMjQgMjQgMjMuMjI3IDI0IDIyLjI3MVYxLjcyOUMyNCAuNzc0IDIzLjIgMCAyMi4yMjIgMGguMDAzeiIvPjwvc3ZnPg%3D%3D"></a>
+  <a href="https://x.com/voladimeji"><img alt="X: @voladimeji" src="https://img.shields.io/badge/@voladimeji-000000?style=for-the-badge&logo=x&logoColor=white"></a>
   <a href="mailto:victor7ishola@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
   <a href="https://github.com/txio-labs"><img alt="TXIO Labs on GitHub" src="https://img.shields.io/badge/TXIO_Labs-24292F?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/Kingvic300?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/Kingvic300?style=for-the-badge&logo=github&logoColor=white&label=followers&labelColor=24292F&color=FF7A1A"></a>
@@ -76,30 +77,49 @@ TXIO Labs is currently part of the [GrantFox](https://grantfox.xyz) open source 
 
 <a href="https://github.com/Kingvic300/Huntly"><img alt="Huntly stars" src="https://img.shields.io/github/stars/Kingvic300/Huntly?style=flat-square&labelColor=15171A&color=FF7A1A&logo=github&label=Huntly"></a>
 <a href="https://github.com/Kingvic300/Forma"><img alt="Forma stars" src="https://img.shields.io/github/stars/Kingvic300/Forma?style=flat-square&labelColor=15171A&color=FF7A1A&logo=github&label=Forma"></a>
+<a href="https://github.com/Kingvic300/Huntly/releases"><img alt="Huntly downloads" src="https://img.shields.io/github/downloads/Kingvic300/Huntly/total?style=flat-square&labelColor=15171A&color=FF7A1A&label=Huntly%20downloads"></a>
+<a href="https://github.com/Kingvic300/Forma/releases"><img alt="Forma downloads" src="https://img.shields.io/github/downloads/Kingvic300/Forma/total?style=flat-square&labelColor=15171A&color=FF7A1A&label=Forma%20downloads"></a>
 <a href="https://github.com/Kingvic300/Forma/releases/latest"><img alt="Forma latest release" src="https://img.shields.io/github/v/release/Kingvic300/Forma?style=flat-square&labelColor=15171A&color=FF7A1A&label=release"></a>
 
 <sub>Both are local-first desktop apps: no telemetry, and your data stays on your computer. Issues and pull requests are welcome.</sub>
 
+## Hackathon wins
+
+<p>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/hack-ecx-dark.svg"><img alt="ECX 5.0: winner at the Engineering Career Expo's 2025 tech programme in Lagos." src="assets/cards/hack-ecx-light.svg" width="266"></picture>
+  <a href="https://izabi.halixe.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/hack-izabi-dark.svg"><img alt="Izabi AI: 1st place at the Izabi AI Hackathon 2025, an AI learning assistant." src="assets/cards/hack-izabi-light.svg" width="266"></picture></a>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/hack-inkluziv-dark.svg"><img alt="INKLUZIV: 1st place at the INKLUZIV Hackathon 2024, a voice-guided web app for visually impaired users." src="assets/cards/hack-inkluziv-light.svg" width="266"></picture>
+</p>
+
 ## Experience
 
-<table>
-  <tr><td><b>TechB</b></td><td>Now. Engineering on TechB, a fintech app.</td></tr>
-  <tr><td><b><a href="https://github.com/txio-labs">TXIO Labs</a></b></td><td>Now. Multi-chain developer tooling: web app, CLI, desktop app and API.</td></tr>
-  <tr><td><b>CVtoCareer</b></td><td>Previously.</td></tr>
-  <tr><td><b><a href="https://semicolon.africa">Semicolon Africa</a></b></td><td>Previously. Software engineering at Semicolon Africa, Lagos.</td></tr>
-</table>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/experience-dark.svg">
+  <img alt="Experience: TechB; TXIO Labs; Naelix Tech Group, Full Stack Engineer; Maseev Invisible Digitals, Backend Engineer; Steerify, Co-Founder; CVtoCareer, Full-Stack Engineer; Raoatech, Software Development Instructor; Sabiedu, Agentic AI Engineer; Semicolon Africa, Trainee Developer." src="assets/experience-light.svg" width="100%">
+</picture>
+
+<sub>
+  <a href="https://cvtocareer.com">CVtoCareer</a> ·
+  <a href="https://semicolon.africa">Semicolon Africa</a> ·
+  <a href="https://github.com/txio-labs">TXIO Labs</a> ·
+  full history on <a href="https://kingvic.xyz/experience">kingvic.xyz</a>
+</sub>
+
+## Recently shipped
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
+  <img alt="My latest merged pull requests and most recently pushed public repositories." src="assets/activity-light.svg" width="100%">
+</picture>
+
+<sub>Pulled from public GitHub activity and refreshed hourly.</sub>
 
 ## Tech stack
 
-<table>
-  <tr><td><b>Languages</b></td><td><img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-15171A?style=flat-square&logo=typescript&logoColor=3178C6"> <img alt="Java" src="https://img.shields.io/badge/Java-15171A?style=flat-square&logo=openjdk&logoColor=FFFFFF"> <img alt="Python" src="https://img.shields.io/badge/Python-15171A?style=flat-square&logo=python&logoColor=3776AB"> <img alt="Rust" src="https://img.shields.io/badge/Rust-15171A?style=flat-square&logo=rust&logoColor=FFFFFF"> <img alt="Solidity" src="https://img.shields.io/badge/Solidity-15171A?style=flat-square&logo=solidity&logoColor=FFFFFF"></td></tr>
-  <tr><td><b>Backend</b></td><td><img alt="Node.js" src="https://img.shields.io/badge/Node.js-15171A?style=flat-square&logo=nodedotjs&logoColor=5FA04E"> <img alt="NestJS" src="https://img.shields.io/badge/NestJS-15171A?style=flat-square&logo=nestjs&logoColor=E0234E"> <img alt="Spring" src="https://img.shields.io/badge/Spring-15171A?style=flat-square&logo=spring&logoColor=6DB33F"> <img alt="Django" src="https://img.shields.io/badge/Django-15171A?style=flat-square&logo=django&logoColor=FFFFFF"> <img alt="Axum" src="https://img.shields.io/badge/Axum-15171A?style=flat-square&logo=rust&logoColor=FFFFFF"> <img alt="Swagger" src="https://img.shields.io/badge/Swagger-15171A?style=flat-square&logo=swagger&logoColor=85EA2D"></td></tr>
-  <tr><td><b>Data</b></td><td><img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-15171A?style=flat-square&logo=postgresql&logoColor=4169E1"> <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-15171A?style=flat-square&logo=mongodb&logoColor=47A248"> <img alt="MySQL" src="https://img.shields.io/badge/MySQL-15171A?style=flat-square&logo=mysql&logoColor=4479A1"> <img alt="SQLite" src="https://img.shields.io/badge/SQLite-15171A?style=flat-square&logo=sqlite&logoColor=0F80CC"></td></tr>
-  <tr><td><b>AI &amp; data</b></td><td><img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-15171A?style=flat-square&logo=scikitlearn&logoColor=F7931E"> <img alt="pandas" src="https://img.shields.io/badge/pandas-15171A?style=flat-square&logo=pandas&logoColor=FFFFFF"> <img alt="LLMs & agents" src="https://img.shields.io/badge/LLMs_%26_agents-15171A?style=flat-square"> <img alt="TF-IDF" src="https://img.shields.io/badge/TF--IDF-15171A?style=flat-square"></td></tr>
-  <tr><td><b>Web3</b></td><td><img alt="Sui · Move" src="https://img.shields.io/badge/Sui_%C2%B7_Move-15171A?style=flat-square&logo=sui&logoColor=4DA2FF"> <img alt="Ethereum" src="https://img.shields.io/badge/Ethereum-15171A?style=flat-square&logo=ethereum&logoColor=FFFFFF"> <img alt="Solana" src="https://img.shields.io/badge/Solana-15171A?style=flat-square&logo=solana&logoColor=9945FF"> <img alt="Aptos" src="https://img.shields.io/badge/Aptos-15171A?style=flat-square"> <img alt="Soroban" src="https://img.shields.io/badge/Soroban-15171A?style=flat-square&logo=stellar&logoColor=FFFFFF"></td></tr>
-  <tr><td><b>Frontend &amp; desktop</b></td><td><img alt="React" src="https://img.shields.io/badge/React-15171A?style=flat-square&logo=react&logoColor=61DAFB"> <img alt="Tailwind" src="https://img.shields.io/badge/Tailwind-15171A?style=flat-square&logo=tailwindcss&logoColor=06B6D4"> <img alt="Tauri" src="https://img.shields.io/badge/Tauri-15171A?style=flat-square&logo=tauri&logoColor=FFC131"> <img alt="Electron" src="https://img.shields.io/badge/Electron-15171A?style=flat-square&logo=electron&logoColor=47848F"></td></tr>
-  <tr><td><b>DevOps &amp; tools</b></td><td><img alt="Docker" src="https://img.shields.io/badge/Docker-15171A?style=flat-square&logo=docker&logoColor=2496ED"> <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-15171A?style=flat-square&logo=githubactions&logoColor=2088FF"> <img alt="Git" src="https://img.shields.io/badge/Git-15171A?style=flat-square&logo=git&logoColor=F05032"> <img alt="Postman" src="https://img.shields.io/badge/Postman-15171A?style=flat-square&logo=postman&logoColor=FF6C37"> <img alt="Linux" src="https://img.shields.io/badge/Linux-15171A?style=flat-square&logo=linux&logoColor=FCC624"></td></tr>
-</table>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
+  <img alt="Tech stack: TypeScript, Java, Python, Rust, Solidity; Node.js, NestJS, Spring, Django, Axum; PostgreSQL, MongoDB, Redis; LLMs and agents; Sui, Ethereum, Solana, Stellar; React, Next.js, Tauri; Docker, GitHub Actions." src="assets/stack-light.svg" width="100%">
+</picture>
 
 ## Behind the commits
 
@@ -122,10 +142,18 @@ TXIO Labs is currently part of the [GrantFox](https://grantfox.xyz) open source 
 I'm always up for a good problem: backend systems, AI workflows, or Web3 developer tooling. If you have an idea worth shipping, want to contribute to TXIO, Huntly or Forma, or just want to trade notes, my inbox is open.
 
 <p align="center">
-  <a href="https://kingvic-portfolio.vercel.app"><img alt="Portfolio" src="assets/icons/portfolio.svg" width="44"></a>&nbsp;
+  <a href="https://kingvic.xyz"><img alt="Portfolio" src="assets/icons/portfolio.svg" width="44"></a>&nbsp;
   <a href="https://www.linkedin.com/in/victor-oladimeji-a5a68428b/"><img alt="LinkedIn" src="assets/icons/linkedin.svg" width="44"></a>&nbsp;
   <a href="mailto:victor7ishola@gmail.com"><img alt="Email" src="assets/icons/gmail.svg" width="44"></a>&nbsp;
-  <a href="https://github.com/txio-labs"><img alt="TXIO Labs on GitHub" src="assets/icons/github.svg" width="44"></a>
+  <a href="https://x.com/voladimeji"><img alt="X" src="assets/icons/x.svg" width="44"></a>&nbsp;
+  <a href="https://github.com/txio-labs"><img alt="TXIO Labs on GitHub" src="assets/icons/github.svg" width="44"></a>&nbsp;
+  <a href="https://github.com/sponsors/Kingvic300"><img alt="Sponsor on GitHub" src="assets/icons/githubsponsors.svg" width="44"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/sponsors/Kingvic300"><img alt="Sponsor Kingvic300" src="https://img.shields.io/badge/Sponsor_my_open_source-BF3989?style=for-the-badge&logo=githubsponsors&logoColor=white"></a>
+  <br>
+  <sub>Huntly and Forma are free. Sponsoring keeps them that way.</sub>
 </p>
 
 <p align="center">

@@ -1,4 +1,4 @@
-name: Update activity card
+name: Update activity cards
 
 on:
   schedule:
@@ -9,6 +9,8 @@ on:
     paths-ignore:
       - assets/stats-light.svg
       - assets/stats-dark.svg
+      - assets/activity-light.svg
+      - assets/activity-dark.svg
 
 permissions:
   contents: write # only to commit the regenerated SVGs
@@ -26,19 +28,21 @@ jobs:
 
       # Standard library only; ubuntu-latest ships Python 3.
       # On any API error the script exits without touching the existing cards.
-      - name: Render card
-        run: python3 scripts/stats.py
+      - name: Render cards
+        run: |
+          python3 scripts/stats.py || echo "stats card skipped"
+          python3 scripts/activity.py || echo "activity card skipped"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit if changed
         run: |
-          git add assets/stats-light.svg assets/stats-dark.svg
+          git add assets/stats-light.svg assets/stats-dark.svg assets/activity-light.svg assets/activity-dark.svg
           if git diff --cached --quiet; then
             echo "No changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update activity card"
+          git commit -m "chore: update activity cards [skip ci]"
           git push

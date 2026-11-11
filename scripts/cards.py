@@ -168,8 +168,10 @@ def item_card(d, c, h, w):
             + f'<text x="22" y="121" font-family="{SANS}" font-size="22" font-weight="700" fill="{c["text"]}">{escape(d["title"])}</text>'
             + text_block(22, 148, desc, 14, c["muted"], 20)
             + pills(22, tags_y, d["tags"], c, w - 18)
-            + f'<line x1="22" y1="{h-50}" x2="{w-22}" y2="{h-50}" stroke="{c["border"]}" stroke-width="1"/>'
-            + f'<text x="22" y="{h-21}" font-family="{SANS}" font-size="14.5" font-weight="600" fill="{c["accent"]}">{escape(d["cta"])} →</text>'
+            + (f'<line x1="22" y1="{h-50}" x2="{w-22}" y2="{h-50}" stroke="{c["border"]}" stroke-width="1"/>'
+               if d.get("cta") or d.get("meta") else "")
+            + (f'<text x="22" y="{h-21}" font-family="{SANS}" font-size="14.5" font-weight="600" fill="{c["accent"]}">{escape(d["cta"])} →</text>'
+               if d.get("cta") else "")
             + (f'<text x="{w-22}" y="{h-21}" text-anchor="end" font-family="{MONO}" font-size="12" fill="{c["muted"]}">{escape(d["meta"])}</text>'
                if d.get("meta") else ""))
     return shell(w, h, c, f'{d["title"]}: {d["text"]}', body)
@@ -183,7 +185,8 @@ def social_icon(kind, c):
                  '<ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M4.5 7.5h15M4.5 16.5h15"/></g>')
     else:
         fill, stroke = {"linkedin": ("#0A66C2", "none"), "gmail": ("#EA4335", "none"),
-                        "github": ("#24292F", "#3D444D")}[kind]
+                        "github": ("#24292F", "#3D444D"), "x": ("#000000", "#3D444D"),
+                        "githubsponsors": ("#BF3989", "none")}[kind]
         glyph = f'<path fill="#FFFFFF" d="{PATHS[kind]}"/>'
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{s}" height="{s}" viewBox="0 0 {s} {s}" role="img" '
             f'aria-label="{kind}"><rect x="0.5" y="0.5" width="{s-1}" height="{s-1}" rx="12" fill="{fill}" '
@@ -255,10 +258,10 @@ def main():
                 svg = item_card(data, colors, heights[group], w)
             with open(os.path.join(OUT, f"{name}-{theme}.svg"), "w", encoding="utf-8") as f:
                 f.write(svg)
-    for kind in ["portfolio", "linkedin", "gmail", "github"]:
+    for kind in ["portfolio", "linkedin", "gmail", "github", "x", "githubsponsors"]:
         with open(os.path.join(ICONS, f"{kind}.svg"), "w", encoding="utf-8") as f:
             f.write(social_icon(kind, THEMES["dark"]))
-    print(f"wrote banner, {len(CONTENT) * len(THEMES)} cards, 4 icons; heights {heights}")
+    print(f"wrote banner, {len(CONTENT) * len(THEMES)} cards, 6 icons; heights {heights}")
 
 
 if __name__ == "__main__":
