@@ -200,6 +200,11 @@ CONTENT = {
         text="Join a challenge, put something on the line, and prove you showed up. Progress is checked against GitHub, LeetCode, Solana activity and more.",
         tags=["Solana", "TypeScript", "React"])),
 
+    "project-headway": (project_card, dict(title="Headway", kicker="dev tools · reporting", accent="mint",
+        cta="headwayhq.xyz",
+        text="Your commits already tell the story. Headway connects to GitHub and builds daily, weekly and sprint engineering reports automatically.",
+        tags=["GitHub API", "TypeScript", "AI"])),
+
     "oss-huntly": (oss_card, dict(title="Huntly", kicker="open source · job hunting", accent="indigo",
         cta="View repository", meta="Apache-2.0",
         text="A private job-hunting assistant that runs entirely on your machine. It finds vacancies, ranks them against your profile, tailors CVs and cover letters, and drafts emails that you approve before anything is sent.",

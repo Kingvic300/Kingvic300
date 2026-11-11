@@ -42,9 +42,8 @@
 <p>
   <a href="https://sovra-ecru.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/project-sovra-dark.svg"><img alt="Sovra: a money app that remembers your goals, with memories stored on Walrus. Live project." src="assets/cards/project-sovra-light.svg" width="266"></picture></a>
   <a href="https://www.usestakesync.xyz/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/project-stakesync-dark.svg"><img alt="StakeSync: join a challenge and prove you showed up, verified on Solana. Live project." src="assets/cards/project-stakesync-light.svg" width="266"></picture></a>
+  <a href="https://headwayhq.xyz"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/project-headway-dark.svg"><img alt="Headway: connects to GitHub and builds daily, weekly and sprint engineering reports automatically. Live project." src="assets/cards/project-headway-light.svg" width="266"></picture></a>
 </p>
-
-<sub>Also building <b>Headway</b>, more on that soon.</sub>
 
 ## Building at TXIO Labs
 
