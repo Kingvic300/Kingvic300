@@ -1,0 +1,44 @@
+name: Update activity card
+
+on:
+  schedule:
+    - cron: "23 * * * *" # hourly; a commit is only made when the numbers change
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - assets/stats-light.svg
+      - assets/stats-dark.svg
+
+permissions:
+  contents: write # only to commit the regenerated SVGs
+
+concurrency:
+  group: activity-card
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      # Standard library only; ubuntu-latest ships Python 3.
+      # On any API error the script exits without touching the existing cards.
+      - name: Render card
+        run: python3 scripts/stats.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit if changed
+        run: |
+          git add assets/stats-light.svg assets/stats-dark.svg
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update activity card"
+          git push
